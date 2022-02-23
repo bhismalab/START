@@ -1,0 +1,66 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/test_parent_color_background_general"
+            android:orientation="vertical"
+            tools:context="com.reading.start.tests.test_parent.ui.fragments.ParentTestTrainingFragment">
+
+            <include
+                android:id="@+id/action_bar"
+                layout="@layout/test_parent_action_bar" />
+
+            <Spinner
+                android:id="@+id/spinner_parrent"
+                style="@style/test_parent_SpinnerGeneral"
+                android:layout_width="@dimen/test_parent_editText_general_width"
+                android:layout_height="@dimen/test_parent_editText_general_height"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/test_parent_training_spinner_margin_top"
+                android:gravity="center" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/test_parent_training_recycler_view_margin_bottom"
+                android:layout_marginEnd="@dimen/test_parent_training_recycler_view_margin_end"
+                android:layout_marginStart="@dimen/test_parent_training_recycler_view_margin_start"
+                android:layout_marginTop="@dimen/test_parent_training_recycler_view_margin_top"
+                android:layout_weight="1"
+                android:scrollbars="horizontal" />
+
+            <ImageButton
+                android:id="@+id/button_start"
+                style="@style/test_parent_ButtonGeneral"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/test_parent_test_instruction_layout_margin_bottom"
+                android:layout_marginTop="@dimen/test_parent_test_instruction_button_margin_top"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/video_view_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/test_parent_color_black"
+            android:visibility="gone">
+
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:foregroundGravity="center"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</layout>

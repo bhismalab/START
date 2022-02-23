@@ -1,0 +1,46 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/test_parent_child_play_color_background_general"
+        android:orientation="vertical"
+        tools:context="com.reading.start.presentation.ui.fragments.test_instructions.ColouringTestInstructionFragment">
+
+        <include
+            android:id="@+id/action_bar"
+            layout="@layout/test_parent_child_play_action_bar" />
+
+        <TextView
+            android:id="@+id/test_instruction_text"
+            style="@style/test_parent_child_play_TextViewGeneral"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="48dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_text_view_general"
+            android:gravity="center"
+            android:paddingBottom="@dimen/test_parent_child_play_test_instruction_text_padding_bottom"
+            android:paddingEnd="@dimen/test_parent_child_play_test_instruction_text_padding_end"
+            android:paddingStart="@dimen/test_parent_child_play_test_instruction_text_padding_start"
+            android:paddingTop="@dimen/test_parent_child_play_test_instruction_text_padding_top"
+            android:textColor="@color/test_parent_child_play_color_text_dialog_content"
+            android:textSize="@dimen/test_parent_child_play_test_instruction_text_size" />
+
+        <Button
+            android:id="@+id/button_start"
+            style="@style/test_parent_child_play_ButtonGeneral"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/test_parent_child_play_test_instruction_layout_margin_bottom"
+            android:gravity="center"
+            android:textAllCaps="false"
+            android:textSize="@dimen/test_parent_child_play_button_small_general_text_size" />
+
+    </LinearLayout>
+
+</layout>
+
+

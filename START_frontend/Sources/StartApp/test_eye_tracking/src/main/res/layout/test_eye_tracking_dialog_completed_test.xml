@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/test_eye_tracking_dialog_small_width"
+    android:layout_height="@dimen/test_eye_tracking_dialog_small_height"
+    android:background="@drawable/dialog_background"
+    android:minHeight="@dimen/test_eye_tracking_dialog_small_min_height"
+    android:minWidth="@dimen/test_eye_tracking_dialog_small_min_width"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dialog_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:paddingBottom="@dimen/test_eye_tracking_dialog_title_padding"
+        android:paddingTop="@dimen/test_eye_tracking_dialog_title_padding"
+        android:textAlignment="center"
+        android:textColor="@color/testDialogTitleColor"
+        android:textSize="@dimen/test_eye_tracking_text_size_title"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/content_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/test_eye_tracking_dialog_margin"
+            android:gravity="center"
+            android:textColor="@color/testDialogContentColor"
+            android:textSize="@dimen/test_eye_tracking_text_size_general" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/test_eye_tracking_dialog_margin"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/button_back"
+                android:layout_width="@dimen/test_eye_tracking_dialog_small_button_width"
+                android:layout_height="@dimen/test_eye_tracking_dialog_small_button_height"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/test_eye_tracking_dialog_button_padding"
+                android:paddingRight="@dimen/test_eye_tracking_dialog_button_padding"
+                android:src="@drawable/dialog_button_left" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/button_new"
+                android:layout_width="@dimen/test_eye_tracking_dialog_small_button_width"
+                android:layout_height="@dimen/test_eye_tracking_dialog_small_button_height"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/test_eye_tracking_dialog_button_padding"
+                android:paddingRight="@dimen/test_eye_tracking_dialog_button_padding"
+                android:src="@drawable/dialog_button_try_again" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/button_next"
+                android:layout_width="@dimen/test_eye_tracking_dialog_small_button_width"
+                android:layout_height="@dimen/test_eye_tracking_dialog_small_button_height"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:gravity="center"
+                android:paddingLeft="@dimen/test_eye_tracking_dialog_button_padding"
+                android:paddingRight="@dimen/test_eye_tracking_dialog_button_padding"
+                android:src="@drawable/dialog_button_right" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

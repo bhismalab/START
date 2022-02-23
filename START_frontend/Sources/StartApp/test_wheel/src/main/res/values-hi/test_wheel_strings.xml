@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- General -->
+    <string name="test_wheel_name">चक्का जाम गेम</string>
+    <string name="test_wheel_actionbar_text_default">चक्का जाम गेम दिखाएँ</string>
+    <string name="test_wheel_fingers_error">कृपया गेम खेलने  के लिए एक ही ऊँगली का इस्तेमाल करें</string>
+    <string name="test_wheel_instruction">इस गेम में आप पाँच बार इस चक्के को घूमते हुए देखेंगे। आप चाहें तो इसे देर तक देख सकते हैं या फिर इसे बंद करके अगली बारी पर तुरन्त जा सकते हैं | अगली बारी पर जाने व चक्के को जल्दी रोकने के लिए दायीं ओर बने लाल बटन को छुएं | </string>
+    <string name="test_wheel_instruction_calibration">कृपया सुनिश्चित करें कि बच्चे का चेहरा स्क्रीन से एक हाथ की दूरी पर है।</string>
+
+    <!-- Dialogs -->
+    <string name="test_wheel_dialog_success_title">यह गेम पूरी हो गयी है </string>
+    <string name="test_wheel_dialog_success_message">क्या आप वापिस जाना चाहते हैं ? एक नयी कोशिश करें या नयी गेम शुरू करें</string>
+    <string name="test_wheel_dialog_interrupted_title">गेम को बीच में रोका गया था </string>
+    <string name="test_wheel_dialog_interrupted_message">क्या आप वापिस जाना चाहते हैं ? एक नयी कोशिश करें या नयी गेम शुरू करें</string>
+
+    <!-- Test Result -->
+    <string name="test_wheel_action_bar_test_result_1">चक्का जाम गेम: पहली कोशिश</string>
+    <string name="test_wheel_action_bar_test_result_2">चक्का जाम गेम: दूसरी कोशिश</string>
+    <string name="test_wheel_action_bar_test_result_3">चक्का जाम गेम: तीसरी कोशिश</string>
+
+</resources>
+

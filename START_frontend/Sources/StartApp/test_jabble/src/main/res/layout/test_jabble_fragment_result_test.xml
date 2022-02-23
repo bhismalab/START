@@ -1,0 +1,48 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/action_bar"
+            layout="@layout/test_jabble_action_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/test_jabble_training_coloring_layout_margin"
+            android:layout_weight="1"
+            android:background="@drawable/card_background_border"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/result_popped"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/test_jabble_result_popped_count"
+                android:textColor="@color/test_jabble_color_text_general_textView"
+                android:textSize="@dimen/test_jabble_result_text_size" />
+
+            <TextView
+                android:id="@+id/result_total"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/test_jabble_result_total_count"
+                android:textColor="@color/test_jabble_color_text_general_textView"
+                android:textSize="@dimen/test_jabble_result_text_size" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</layout>

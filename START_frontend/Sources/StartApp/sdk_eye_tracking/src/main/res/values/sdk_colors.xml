@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorSelectedColor">#AFAFAF</color>
+    <color name="colorNormalColor">#808080</color>
+
+    <color name="colorCursor">#ff0000</color>
+
+    <color name="colorSettingsText">#000000</color>
+
+    <color name="colorOK">#11A315</color>
+    <color name="colorFail">#ff0000</color>
+</resources>

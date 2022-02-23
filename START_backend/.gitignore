@@ -1,0 +1,50 @@
+# phpstorm project files
+.idea
+
+# netbeans project files
+nbproject
+
+# zend studio for eclipse project files
+.buildpath
+.project
+.settings
+
+# Kohana
+/application/cache/*
+/application/logs/*
+
+# thumbnail cache
+Thumbs.db
+
+# composer vendor dir
+#/vendor
+
+# composer itself is not needed
+composer.phar
+
+# Mac DS_Store Files
+.DS_Store
+
+# phpunit itself is not needed
+phpunit.phar
+# local phpunit config
+/phpunit.xml
+
+# project-specific locations
+robots.txt
+.ftpquota
+/cgi-bin/
+old/
+trash/
+debug/
+/error_log
+/uploads/*
+/config/db.php
+/start_cms/app/config/app.php
+/start_cms/app/config/db.php
+/start_cms/app/config/dirs.php
+
+consent_form_english.txt
+consent_form_hindi.txt
+
+/start_cms/deps/vendor

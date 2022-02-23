@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/dialog_big_width"
+    android:layout_height="@dimen/dialog_big_height"
+    android:background="@color/color_background"
+    android:minHeight="@dimen/dialog_big_height"
+    android:minWidth="@dimen/dialog_big_width"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="@dimen/dialog_button_width"
+            android:layout_height="@dimen/dialog_button_height"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/testDialogTitleColor"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/button_save"
+            android:layout_width="@dimen/dialog_button_width"
+            android:layout_height="@dimen/dialog_button_height"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:src="@drawable/dialog_button_save" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dialog_margin"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/name_clinic_doctor"
+            style="@style/EditTextGeneralDivided"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/view_margin_default"
+            android:hint="@string/child_diagnosis_clinic_doctor_name"
+            android:maxLines="1"
+            android:nextFocusDown="@+id/date_of_birth"
+            android:singleLine="true"
+            android:textColorHint="@color/color_hint" />
+
+        <TextView
+            android:id="@+id/date_of_birth"
+            style="@style/EditTextGeneralDivided"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/edit_text_general_height"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/view_margin_default"
+            android:hint="@string/child_diagnosis_assessment_date"
+            android:nextFocusDown="@+id/text_diagnosis"
+            android:singleLine="true"
+            android:textColorHint="@color/color_hint" />
+
+        <EditText
+            android:id="@+id/text_diagnosis"
+            style="@style/EditTextGeneralDivided"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:hint="@string/child_diagnosis_describe_diagnosis"
+            android:nextFocusDown="@+id/male_radio_button"
+            android:textColorHint="@color/color_hint" />
+
+    </LinearLayout>
+</LinearLayout>

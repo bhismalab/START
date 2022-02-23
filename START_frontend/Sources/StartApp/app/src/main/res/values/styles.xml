@@ -1,0 +1,48 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowAnimationStyle">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:popupMenuStyle">@style/PopupMenu</item>
+    </style>
+
+    <style name="PopupMenu" parent="@android:style/Widget.PopupMenu">
+        <item name="android:popupBackground">@android:color/white</item>
+    </style>
+
+    <style name="EditTextGeneralDivided">
+        <item name="android:layout_height">@dimen/edit_text_general_height</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_general</item>
+        <item name="android:textColor">@color/color_text_general_textView</item>
+        <item name="android:background">@drawable/divider</item>
+    </style>
+
+    <style name="TextViewGeneral">
+        <item name="android:textSize">@dimen/text_size_general</item>
+        <item name="android:textColor">@color/color_text_general_textView</item>
+    </style>
+
+    <style name="SpinnerGeneralDivided">
+        <item name="android:background">@drawable/spinner_divided</item>
+        <item name="android:gravity">start|center_vertical</item>
+        <item name="android:textSize">@dimen/text_size_general</item>
+        <item name="android:textColor">@color/color_text_general_textView</item>
+        <item name="android:spinnerMode">dropdown</item>
+    </style>
+
+    <style name="DialogContentText">
+        <item name="android:textColor">@color/color_text_dialog_content</item>
+        <item name="android:textSize">@dimen/text_size_general</item>
+    </style>
+
+    <style name="DialogContentTitleText">
+        <item name="android:textColor">@color/color_text_dialog_title</item>
+        <item name="android:textSize">@dimen/text_size_general</item>
+    </style>
+
+</resources>

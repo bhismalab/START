@@ -1,0 +1,693 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.reading.start.presentation.ui.fragments.general.MenuFragment">
+
+        <include
+            android:id="@+id/action_bar"
+            layout="@layout/action_bar" />
+
+        <RadioGroup
+            android:id="@+id/menu_selector"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_margin="24dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3" />
+
+            <RadioButton
+                android:id="@+id/menu_about"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_background_menu_left"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:text="@string/menu_about_project"
+                android:textColor="@drawable/radio_button_text_menu"
+                android:textSize="@dimen/text_size_general" />
+
+            <RadioButton
+                android:id="@+id/menu_user_guide"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:background="@drawable/radio_button_background_menu_right"
+                android:button="@null"
+                android:gravity="center"
+                android:paddingEnd="8dp"
+                android:paddingStart="8dp"
+                android:text="@string/menu_user_guide"
+                android:textColor="@drawable/radio_button_text_menu"
+                android:textSize="@dimen/text_size_general" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.3" />
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/content_about_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:visibility="visible">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="36dp"
+                android:layout_marginStart="36dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/about_title" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/about_project_content_text_padding_top_bottom"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingTop="@dimen/about_project_content_text_padding_top_bottom"
+                        android:text="@string/about_text"
+                        android:textSize="@dimen/about_project_content_text_size" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/about_project_content_text_padding_top_bottom"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingTop="@dimen/about_project_content_text_padding_top_bottom"
+                        android:text="@string/about_header"
+                        android:textSize="@dimen/about_project_content_text_size"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <ImageView
+                            android:id="@+id/logo_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/about_image_1" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/about_project_content_text_padding_top_bottom"
+                            android:paddingStart="@dimen/about_project_content_text_padding_start_end"
+                            android:paddingTop="@dimen/about_project_content_text_padding_top_bottom">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_header_1"
+                                android:textSize="@dimen/about_project_content_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_message_1"
+                                android:textSize="@dimen/about_project_content_text_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/about_project_content_text_padding_top_bottom"
+                            android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                            android:paddingTop="@dimen/about_project_content_text_padding_top_bottom">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_header_2"
+                                android:textSize="@dimen/about_project_content_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_message_2"
+                                android:textSize="@dimen/about_project_content_text_size" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/logo_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/about_image_2" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <ImageView
+                            android:id="@+id/logo_3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/about_image_3" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/about_project_content_text_padding_top_bottom"
+                            android:paddingStart="@dimen/about_project_content_text_padding_start_end"
+                            android:paddingTop="@dimen/about_project_content_text_padding_top_bottom">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_header_3"
+                                android:textSize="@dimen/about_project_content_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_message_3"
+                                android:textSize="@dimen/about_project_content_text_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/about_project_content_text_padding_top_bottom"
+                            android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                            android:paddingTop="@dimen/about_project_content_text_padding_top_bottom">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_header_4"
+                                android:textSize="@dimen/about_project_content_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_message_4"
+                                android:textSize="@dimen/about_project_content_text_size" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/logo_4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/about_image_4" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <ImageView
+                            android:id="@+id/logo_5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/about_image_5" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/about_project_content_text_padding_top_bottom"
+                            android:paddingStart="@dimen/about_project_content_text_padding_start_end"
+                            android:paddingTop="@dimen/about_project_content_text_padding_top_bottom">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_header_5"
+                                android:textSize="@dimen/about_project_content_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_message_5"
+                                android:textSize="@dimen/about_project_content_text_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/about_project_content_text_padding_top_bottom"
+                            android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                            android:paddingTop="@dimen/about_project_content_text_padding_top_bottom">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_header_6"
+                                android:textSize="@dimen/about_project_content_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_message_6"
+                                android:textSize="@dimen/about_project_content_text_size" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/logo_6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/about_image_6" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <ImageView
+                            android:id="@+id/logo_7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/about_image_7" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/about_project_content_text_padding_top_bottom"
+                            android:paddingStart="@dimen/about_project_content_text_padding_start_end"
+                            android:paddingTop="@dimen/about_project_content_text_padding_top_bottom">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_header_7"
+                                android:textSize="@dimen/about_project_content_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_message_7"
+                                android:textSize="@dimen/about_project_content_text_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/about_project_content_text_padding_top_bottom"
+                            android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                            android:paddingTop="@dimen/about_project_content_text_padding_top_bottom">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_header_8"
+                                android:textSize="@dimen/about_project_content_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_message_8"
+                                android:textSize="@dimen/about_project_content_text_size" />
+                        </LinearLayout>
+
+                        <ImageView
+                            android:id="@+id/logo_8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/about_image_8" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <ImageView
+                            android:id="@+id/logo_9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/about_image_9" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:paddingBottom="@dimen/about_project_content_text_padding_top_bottom"
+                            android:paddingStart="@dimen/about_project_content_text_padding_start_end"
+                            android:paddingTop="@dimen/about_project_content_text_padding_top_bottom">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_header_9"
+                                android:textSize="@dimen/about_project_content_text_size"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/about_message_9"
+                                android:textSize="@dimen/about_project_content_text_size" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/content_user_guide_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:visibility="gone">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="36dp"
+                android:layout_marginStart="36dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="16dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:orientation="vertical"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_header_1"
+                            android:textSize="@dimen/about_project_content_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_message_1"
+                            android:textSize="@dimen/about_project_content_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:orientation="vertical"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_header_2"
+                            android:textSize="@dimen/about_project_content_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_message_2"
+                            android:textSize="@dimen/about_project_content_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:orientation="vertical"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_header_3"
+                            android:textSize="@dimen/about_project_content_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_message_3"
+                            android:textSize="@dimen/about_project_content_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:orientation="vertical"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_header_4"
+                            android:textSize="@dimen/about_project_content_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_message_4"
+                            android:textSize="@dimen/about_project_content_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:orientation="vertical"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_header_5"
+                            android:textSize="@dimen/about_project_content_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_message_5"
+                            android:textSize="@dimen/about_project_content_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:orientation="vertical"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_header_6"
+                            android:textSize="@dimen/about_project_content_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_message_6"
+                            android:textSize="@dimen/about_project_content_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:orientation="vertical"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_header_7"
+                            android:textSize="@dimen/about_project_content_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_message_7"
+                            android:textSize="@dimen/about_project_content_text_size" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="36dp"
+                        android:layout_marginTop="36dp"
+                        android:orientation="vertical"
+                        android:paddingEnd="@dimen/about_project_content_text_padding_start_end"
+                        android:paddingStart="@dimen/about_project_content_text_padding_start_end">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_header_8"
+                            android:textSize="@dimen/about_project_content_text_size"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/user_guide_message_8"
+                            android:textSize="@dimen/about_project_content_text_size" />
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

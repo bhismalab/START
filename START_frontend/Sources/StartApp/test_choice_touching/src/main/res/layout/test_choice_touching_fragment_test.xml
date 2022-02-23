@@ -1,0 +1,72 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.reading.start.tests.test_choice_touching.ui.fragments.ChoiceTouchingTestFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/test_choice_touching_color_black"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/test_choice_touching_training_coloring_layout_margin"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/buttons_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:animateLayoutChanges="false">
+
+                    <ImageView
+                        android:id="@+id/button_green"
+                        android:layout_width="@dimen/test_choice_touching_circle_size"
+                        android:layout_height="@dimen/test_choice_touching_circle_size"
+                        android:layout_margin="50dp"
+                        android:background="@drawable/circle_green"
+                        android:visibility="visible" />
+
+                    <ImageView
+                        android:id="@+id/button_red"
+                        android:layout_width="@dimen/test_choice_touching_circle_size"
+                        android:layout_height="@dimen/test_choice_touching_circle_size"
+                        android:layout_margin="50dp"
+                        android:background="@drawable/circle_red"
+                        android:visibility="visible" />
+
+                </RelativeLayout>
+
+                <com.reading.start.tests.test_choice_touching.ui.views.CompleteTriggerView
+                    android:id="@+id/completeTriggerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:clickable="true" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/video_view_holder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/test_choice_touching_color_black"
+            android:visibility="gone">
+
+            <VideoView
+                android:id="@+id/video_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:foregroundGravity="center"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </RelativeLayout>
+</layout>

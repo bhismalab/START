@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- General -->
+    <dimen name="test_wheel_dialog_button_general_width">250dp</dimen>
+    <dimen name="test_wheel_dialog_button_general_height">60dp</dimen>
+    <dimen name="test_wheel_circle_size">260dp</dimen>
+
+    <!-- Text -->
+    <dimen name="test_wheel_text_size_title">26sp</dimen>
+    <dimen name="test_wheel_text_size_general">24sp</dimen>
+    <dimen name="test_wheel_actionbar_text_size">36sp</dimen>
+    <dimen name="test_wheel_button_small_general_text_size">24sp</dimen>
+    <dimen name="test_wheel_dialog_title_text_size">24sp</dimen>
+    <dimen name="test_wheel_dialog_button_text_size">24sp</dimen>
+
+    <!-- Action Bar -->
+    <dimen name="test_wheel_actionbar_height">80dp</dimen>
+    <dimen name="test_wheel_actionbar_button_padding">12dp</dimen>
+    <dimen name="test_wheel_actionbar_button_margin">16dp</dimen>
+    <dimen name="test_wheel_actionbar_button_border_padding">24dp</dimen>
+    <dimen name="test_wheel_actionbar_button_width">50dp</dimen>
+    <dimen name="test_wheel_actionbar_button_height">50dp</dimen>
+
+    <!-- Dialog -->
+    <dimen name="test_wheel_dialog_width">750dp</dimen>
+    <dimen name="test_wheel_dialog_height">500dp</dimen>
+    <dimen name="test_wheel_dialog_min_width">750dp</dimen>
+    <dimen name="test_wheel_dialog_min_height">500dp</dimen>
+    <dimen name="test_wheel_dialog_margin">24dp</dimen>
+    <dimen name="test_wheel_dialog_title_padding">16dp</dimen>
+    <dimen name="test_wheel_dialog_small_width">400dp</dimen>
+    <dimen name="test_wheel_dialog_small_height">300dp</dimen>
+    <dimen name="test_wheel_dialog_small_min_width">400dp</dimen>
+    <dimen name="test_wheel_dialog_small_min_height">300dp</dimen>
+    <dimen name="test_wheel_dialog_small_button_width">64dp</dimen>
+    <dimen name="test_wheel_dialog_small_button_height">64dp</dimen>
+    <dimen name="test_wheel_dialog_button_margin_top">16dp</dimen>
+    <dimen name="test_wheel_dialog_button_margin_bottom">4dp</dimen>
+    <dimen name="test_wheel_dialog_button_margin_left">4dp</dimen>
+    <dimen name="test_wheel_dialog_button_margin_right">4dp</dimen>
+    <dimen name="test_wheel_dialog_button_padding">8dp</dimen>
+    <dimen name="test_wheel_dialog_progress_width">550dp</dimen>
+    <dimen name="test_wheel_dialog_progress_height">100dp</dimen>
+    <dimen name="test_wheel_action_bar_height">80dp</dimen>
+    <dimen name="test_wheel_button_general_text_size">32sp</dimen>
+    <dimen name="test_wheel_button_general_width">80dp</dimen>
+    <dimen name="test_wheel_button_general_height">80dp</dimen>
+
+    <!-- Coloring Test -->
+    <dimen name="test_wheel_coloring_navigation_margin">24dp</dimen>
+
+    <!-- Training Coloring -->
+    <dimen name="test_wheel_training_coloring_layout_margin">16dp</dimen>
+    <dimen name="test_wheel_training_navigation_image_size">64dp</dimen>
+    <dimen name="test_wheel_training_navigation_image_margin">4dp</dimen>
+    <dimen name="test_wheel_training_navigation_image_margin_start">8dp</dimen>
+    <dimen name="test_wheel_training_button_margin_top">16dp</dimen>
+    <dimen name="test_wheel_training_palette_image_size">48dp</dimen>
+    <dimen name="test_wheel_training_palette_image_margin">12dp</dimen>
+    <dimen name="test_wheel_training_seek_bar_brush_image_right_size">48dp</dimen>
+    <dimen name="test_wheel_training_seek_bar_brush_image_left_size">36dp</dimen>
+    <dimen name="test_wheel_training_seek_bar_width">300dp</dimen>
+
+    <!-- Test Instructions -->
+    <dimen name="test_wheel_test_instruction_layout_margin_top">16dp</dimen>
+    <dimen name="test_wheel_test_instruction_layout_margin_bottom">16dp</dimen>
+    <dimen name="test_wheel_test_instruction_layout_margin_start">48dp</dimen>
+    <dimen name="test_wheel_test_instruction_layout_margin_end">48dp</dimen>
+    <dimen name="test_wheel_test_instruction_title_margin_bottom">24dp</dimen>
+    <dimen name="test_wheel_test_instruction_text_padding_top">8dp</dimen>
+    <dimen name="test_wheel_test_instruction_text_padding_bottom">8dp</dimen>
+    <dimen name="test_wheel_test_instruction_text_padding_start">12dp</dimen>
+    <dimen name="test_wheel_test_instruction_text_padding_end">12dp</dimen>
+    <dimen name="test_wheel_test_instruction_button_margin_top">16dp</dimen>
+    <dimen name="test_wheel_test_instruction_text_size">18sp</dimen>
+    <dimen name="test_wheel_test_instruction_title_text_size">28sp</dimen>
+    <dimen name="test_wheel_test_instruction_card_margin_start_end">64dp</dimen>
+    <dimen name="test_wheel_test_instruction_card_text_size">24sp</dimen>
+    <dimen name="test_wheel_test_instruction_card_text_margin_bottom">12dp</dimen>
+    <dimen name="test_wheel_test_instruction_card_image_margin_bottom">16dp</dimen>
+
+    <!-- Constants -->
+    <integer name="test_wheel_default_stroke_width">10</integer>
+    <integer name="test_wheel_default_seek_bar_max">25</integer>
+</resources>

@@ -1,0 +1,274 @@
+<resources>
+    <string name="app_name">शुरू करें</string>
+
+    <!-- Buttons -->
+    <string name="button_allow">आगे बढ़ें</string>
+    <string name="button_cancel">रद्द करेंद</string>
+    <string name="button_login">साइन इन करें</string> 
+    <string name="button_open_settings">सेटिंग्स खोलें</string>
+
+    <!-- Hints -->
+    <string name="hint_username">यूजर नेम</string>
+    <string name="hint_password">पासवर्ड</string>
+
+    <!-- Permissions -->
+    <string name="dialog_permission_error_title">अनुमतियां</string>
+    <string name="dialog_permission_error_message">कृपया सभी अनुमतियों को पास करें उनके बिना ऐप काम नहीं कर सकताा</string>
+    <string name="dialog_permission_denied_error_message">ऐप आपकी अनुमति के बिना काम नहीं कर सकता। कृपया सेटिंग खोलें और सभी आवश्यक अनुमतियों को पास करें ।</string>
+
+    <!-- Screen Titles -->
+    <string name="action_bar_my_surveys_title">मेरे सर्वे</string>
+    <string name="action_bar_add_child">नए बच्चे का प्रोफाइल जोड़ें</string>
+    <string name="action_bar_add_first_parent">पहले अभिभावक/माता/पिता का प्रोफाइल जोड़ें</string>
+    <string name="action_bar_add_second_parent">दूसरे अभिभावक/माता/पिता का प्रोफाइल जोड़ें</string>
+    <string name="action_bar_edit_child">बच्चे की जानकारी में बदलाव करें |</string>
+    <string name="action_bar_edit_first_parent">पहले अभिभावक/माता/पिता की जानकारी में बदलाव करें |</string>
+    <string name="action_bar_edit_second_parent">दूसरे अभिभावक/माता/पिता की जानकारी में बदलाव करें |</string>
+    <string name="action_bar_child_information">बच्चे का प्रोफाइल</string>
+    <string name="action_bar_survey">सर्वे %s</string>
+    <string name="action_bar_child_diagnosis">पहले से मौजूद किसी तकलीफ/बीमारी की जानकारी</string>
+    <string name="action_bar_menu">मेनू</string>
+    <string name="menu_about_project">प्रोजेक्ट की जानकारी</string>
+    <string name="menu_user_guide">उपयोगकर्ता के लिए जानकारी</string>
+
+    <!-- Menu -->
+    <string name="menu_navigation_user_guide">उपयोगकर्ता के लिए जानकारी</string>
+    <string name="menu_navigation_about_project">प्रोजेक्ट की जानकारी</string>
+    <string name="menu_navigation_settings">सेटिंग्स</string>
+    <string name="menu_navigation_log_out">लॉग आउट</string>
+    <string name="menu_navigation_english">En</string>
+    <string name="menu_navigation_hindi">हिंदी</string>
+
+    <!-- TextView Static Text -->
+    <string name="text_male">पुरुष</string>
+    <string name="text_female">स्त्री </string>
+    <string name="text_parent">माता-पिता</string>
+    <string name="text_guardian">अभिभावक</string>
+
+    <!-- Success messages -->
+    <string name="success_message_password_valid">पासवर्ड मान्य है</string>
+    <string name="success_message_password_changed">पासवर्ड बदल दिया गया है।</string>
+
+    <!-- Error messages -->
+    <string name="error_message_login_failed_title">लॉग-इन सफल नहीं हो सका</string>
+    <string name="error_message_login_failed">यूजर नेम (उपयोगकर्ता नाम) और / या पासवर्ड गलत है। कृपया उन्हें  ठीक करें और दुबारा कोशिश करें ।</string>
+    <string name="error_message_login_internet_connection_failed">लॉग-इन सफल नहीं हो सका | कृपया अपने इंटरनेट कनेक्शन की जाँच करें।</string>
+    <string name="error_message_login_attempt_failed">आप अगले लॉगिन का प्रयास 30 मिनट के बाद कर सकते हैं।</string>
+    <string name="error_message_user_validation">मान्य उपयोगकर्ता नाम दर्ज करें</string>
+    <string name="error_message_password_validation">4 से 10 अक्षर एंव नंबर का एक पासवर्ड डालें</string>
+    <string name="error_message_forgot_password_validation">कृपया उसी पासवर्ड को दुबारा डालें</string>
+    <string name="error_message_forgot_date">कृपया, सही उपयोगकर्ता नाम और जन्म तिथि दर्ज करें।</string>
+    <string name="error_message_reset_password">आपका पासवर्ड दर्ज नहीं हो सका कृपया अपना इंटरनेट कनेक्शन जाँचे या अपने सुपरवाइजर से सम्पर्क करें |</string>
+    <string name="error_message_login_attempts_end">यह खाता बंद कर दिया गया है । कृपया, खाता फिर से शुरू करने के लिए अपने सुपरवाइजर  से संपर्क करें।</string>
+    <string name="error_message_error">गलती</string>
+    <string name="error_message_upload_general">सर्वेक्षण अपलोड करने में असमर्थ कृपया अपने इंटरनेट कनेक्शन की जाँच करें</string>
+    <string name="error_message_upload_internet_connection">सर्वे अपलोड नहीं हो पा रहा| कृपया अपने इंटरनेट कनेक्शन की जाँच करें</string>
+
+    <!-- Consent -->
+    <string name="consent_dialog_header_text">सहमति पत्र (कंसेंट फॉर्म)</string>
+    <string name="consent_sign_dialog_header_text">माता - पिता / अभिभावक के हस्ताक्षर</string>
+    <string name="consent_dialog_success_header_text">प्रोफाइल सफलता से बन गया है  </string>
+    <string name="consent_dialog_success_message_text">प्रोफाइल सफलता से बन गया है  क्या आप मेरे सर्वे पृष्ठ पर जाकर टेस्ट शुरू करना चाहते हैं?</string>
+    <string name="consent_dialog_paragraph_title_2">प्रोजेक्ट की जानकारी</string>
+    <string name="consent_dialog_paragraph_message_1"> हम रेडिंग विश्वविद्यालय के प्रोफेसर भीष्मदेव चक्रवर्ती और डॉ इंदु दुबे द्वारा चलाये जा रहे  "बच्चों के सामाजिक, भावनात्मक और शारीरिक विकास की जांच" नामक प्रोजेक्ट में भाग लेने के लिए सहमत हैं। हमने इससे सम्बंधित जानकारी देखी है और पढ़ ली है / हमें इस प्रोजेक्ट के बारे में स्पष्ट रूप से समझा दिया गया है और  हमें प्रोजेक्ट के बारे में सवाल पूछने का अवसर दिया गया है | हमारी व्यक्तिगत जानकारी को किस प्रकार सुरक्षित रखा जाएगा व टेस्ट के कुछ साल बाद इसे कैसे नष्ट किया जाएगा के बारे में हमें स्पष्ट रूप से समझा दिया गया है | हम जानते हैं की इस टेस्ट में हमारी भगीदारी सिर्फ हमारी इच्छा से है और हम इस प्रोजेक्ट से किसी भी समय (बिना कारण दिए) बाहर निकल सकते  \n\n हैं हम अपने बच्चे की भागीदारी के साथ आगे बढ़ने के लिए खुश हैं।</string>
+    <string name="consent_dialog_paragraph_message_2">
+         प्रधान रिसर्चर: प्रोफेसर भीष्मदेव चक्रवर्ती 
+        \nईमेल: b.chakrabarti@reading.ac.uk
+        \nफोन: +44 (0) 118 378 5551
+        \n\nरिसर्चर: डॉ इंदु दुबे:
+        \nईमेल: i.dubey@reading.ac.uk
+        \n\nहम आपके इस प्रोजेक्ट "बच्चों का सामाजिक, भावनात्मक, और शारीरिक विकास" में भाग लेने के लिए आभारी हैं इस प्रोजेक्ट का मुख्य उद्देश्य एक ऐप बनाना है जिससे की छोटे बच्चों के मानसिक व शारीरिक विकास का टेस्ट खेल के माध्यम से किया जा सके| जांच के दौरान इस टैबलेट पर आपके बच्चे को 15-20 मिनट कुछ आसान खेल दिखाए जाएंगे| जैसे की टैबलेट पर कुछ तस्वीरें देखना, बटन दबा कर अपनी पसंद का वीडियो देखना, तितली का पीछा करना, बुलबुले फोड़ना, तस्वीरों में रंग भरना | 
+        
+        \n\nइस जाँच के कुछ खेलों के दौरान हम आपके बच्चे की नज़र किस चीज़ पर है यह देखना चाहते हैं इसके लिए उन खेलों को खेलते समय हम आपके बच्चे के आँखों की हरकतों को इस टैबलेट के कमरे के माध्यम से वीडियो रिकॉर्ड करेंगे। पूरी जांच को छोटे-छोटे भागों में पूरा किया जाएगा ताकि आपका बच्चा परेशान ना हो | जांच के दौरान हम यह सुनिश्चित करेंगे की आपका बच्चा खेल खेलना चाहता हैं| यदि किसी भी समय हमें ऐसा लगे की बच्चा थका हुआ है या खेल नहीं खेलने चाहता तो जांच को रोक दिया जाएगा |  
+        
+        \n\nआपके द्वारा दी गयी जानकारियों तथा बच्चे से सम्बंधित सभी व्यक्तिगत जानकारियों की गोपनीय रखा जाएगा| इसे सुरक्षित रूप से संगृहीत किया जाएगा ताकि कोई भी व्यक्ति जो की इस प्रोजेक्ट से सम्बंधित नहीं है उसे यह जानकारी न मिल सके| शोध के लिए आपके बच्चे के जांच के परिणामो को एक नंबर से जोड़ा जाएगा तथा शोधकर्ताओं को सिर्फ वही नम्बर तथा जांच के परिणाम दिए जा सकें व बच्चे की व्यक्तिगत जानकारी से अलग रखे जा सके |  
+प्रोजेक्ट के पूरा होने से 5 साल की अवधि समाप्त होने के बाद परियोजना के लिए एकत्र की गयी सभी जानकारी को सुरक्षित रूप से नष्ट कर दिया जाएगा। इस प्रोजेक्ट में भाग लेना पूरी तरह से आपकी इच्छा पर निर्भर है; आप किसी भी समय बिना किसी कारण दिए अपनी सहमति वापिस ले सकते हैं व प्रोजेक्ट से बहार निकल सकते हैं । यदि आप कोई भी सवाल पूछना चाहें तो i.dubey@reading.ac.uk पर डॉ इंदु को मेल कर सकते हैं 
+        
+        \n\nइस प्रोजेक्ट को रेडिंग विश्वविद्यालय की "अनुसंधान नीति समिति" ने परखा है और इसे "आचरण के लिए अनुकूल" माना है
+
+        \n\nआपकी मदद के लिए धन्यवाद।
+    </string>
+    
+    <string name="consent_dialog_success_surveys">मेरे सर्वे </string>
+    <string name="consent_dialog_success_start">सर्वे शुरू करें</string>
+    <string name="consent_dialog_agree">इस प्रोजेक्ट के बारे में हमें स्पष्ट रूप से समझा दिया गया है और हमें प्रश्न पूछने के अवसर मिल चुके हैं।  हम इस प्रोजेक्ट में भाग लेने के लिए सहमत हैं</string>
+
+    <!-- Login -->
+    <string name="login_password_reset_title">नया पासवर्ड बनायें </string>
+    <string name="login_password_reset_message">कृपया अपना यूजर नेम (उपयोगकर्ता नाम) और जन्म की तारिख डालें</string>
+    <string name="login_password_set_message">कृपया नया पासवर्ड डालें </string>
+    <string name="login_password_reset_new_password">नया पासवर्ड</string>
+    <string name="login_password_reset_confirm_password">पासवर्ड की पहचान करें</string>
+    <string name="login_password_reset_username">यूजर नेम (उपयोगकर्ता का नाम)</string>
+    <string name="login_password_reset_date">दिन / माह / वर्ष </string>
+    <string name="login_forgot_password">पासवर्ड भूल गए?</string>
+    <string name="synchronize_dialog_error_title">सर्वर के साथ कनेक्शन नहीं हो पा रहा |</string>
+    <string name="synchronize_dialog_error_message">सर्वर के साथ कनेक्शन नहीं हो पा रहा | कृपया अपने इंटरनेट कनेक्शन की जाँच करें और दुबारा कोशिश करें </string>
+
+    <!-- Logout -->
+    <string name="logout_dialog_title">लॉग -आउट</string>
+    <string name="logout_dialog_message">क्या आप वास्तव में ऐप से बहार निकलना चाहते हैं</string>
+
+    <!-- Child -->
+    <string name="child_name">बच्चे का नाम</string>
+    <string name="child_surname">बच्चे का पारिवारिक नाम (सरनेम)</string>
+    <string name="child_date_of_birth">बच्चे के जन्म के तारीख़</string>
+    <string name="child_address">बच्चे का पता</string>
+    <string name="child_dialog_edit_close_title">बच्चे की जानकारी में बदलाव करें</string>
+    <string name="child_dialog_add_close_title">नए बच्चे का प्रोफाइल जोड़ें </string>
+    <string name="child_dialog_edit_close_message">क्या आप वाकई जानकारी को सुरक्षित (सेव) किये बिना बाहर निकलना चाहते हैं ?</string>
+    <string name="child_info_pattern">जन्म तारीख़ %1$s</string>
+    <string name="child_state_hint">राज्य चुनने के लिए टैप करें </string>
+    <string name="child_hand_hint">किस हाथ का प्रयोग करता है</string>
+    <string name="child_hand_right">दायाँ</string>
+    <string name="child_hand_left">बायां</string>
+    <string name="child_hand_ambidexter">दोनों हाथों का इस्तेमाल करने वाला</string>
+
+    <!-- Parent -->
+    <string name="parent_skip_step_text">इस स्टेप को छोड़ दें</string>
+    <string name="parent_name">माता - पिता का नाम</string>
+    <string name="parent_surname">माता/पिता का पारिवारिक नाम (सरनेम) </string>
+    <string name="parent_date_of_birth">माता/पिता के जन्म की तारीख़ </string>
+    <string name="parent_address">माता-पिता का पता</string>
+    <string name="parent_phone">फ़ोन नंबर</string>
+    <string name="parent_email_address">ईमेल</string>
+    <string name="parent_language">भाषा चुनने के लिए टैप करें</string>
+    <string name="parent_preferable_contact_hint">किस तरह से संपर्क किया जाना पसंद करेंगेि</string>
+    <string name="parent_preferable_contact_not_specified">नहीं चुना गया</string>
+    <string name="parent_preferable_contact_post">चिठ्ठी</string>
+    <string name="parent_preferable_contact_phone">फ़ोन</string>
+    <string name="parent_preferable_contact_email">ईमेल</string>
+
+    <!-- Survey -->
+    <string name="survey_name">सर्वे  %s</string>
+    <string name="survey_dialog_delete_title">सर्वे हटाएँ </string>
+    <string name="survey_dialog_delete_message">क्या आप वाकई यह सर्वे हटाना चाहते हैं? ऐसा करने से अभी तक किये गए सभी टेस्ट का पूरा रिकॉर्ड ख़त्म कर दिया जाएगा </string>
+    <string name="survey_dialog_download_title">सर्वे डाउनलोड करें </string>
+    <string name="survey_dialog_download_message">क्या आप सही में सर्वे डाउनलोड करना चाहते हैं ?</string>
+
+    <!-- Child Diagnosis -->
+    <string name="child_diagnosis_clinic_doctor_name">क्लिनिक / डॉक्टर का नाम</string>
+    <string name="child_diagnosis_describe_diagnosis">बीमारी/तकलीफ़ के बारे में बताएं </string>
+    <string name="child_diagnosis_assessment_date">टेस्ट की तारीख़</string>
+
+    <!-- Validation -->
+    <string name="validation_incorrect_name">गलत नाम</string>
+    <string name="validation_incorrect_surname">गलत पारिवारिक नाम (सरनेम)</string>
+    <string name="validation_incorrect_address">गलत पता</string>
+    <string name="validation_incorrect_phone_number">गलत फोन नंबर</string>
+    <string name="validation_incorrect_email">गलत ईमेल</string>
+
+    <!-- Progress Dialog -->
+    <string name="progress_dialog_upload_survey">सर्वे अपलोड हो रहा है, कृपया प्रतीक्षा करें</string>
+
+    <!-- About -->
+    <string name="about_text">स्टार्ट प्रोजेक्ट  रेडिंग  विश्वविद्यालय, पब्लिक हेल्थ फाउंडेशन ऑफ़ इंडिया, बर्कबेक विश्वविद्यालय, नाटिंहम ट्रेन्ट विश्वविद्यालय, आल इंडिया इंस्टिट्यूट ऑफ़ मेडिकल साइंसेस, संगत , इंडियन इंस्टिट्यूट ऑफ़ टेक्नोलॉजी (मुंबई), तथा थेरेपी बॉक्स® संगठनों के बीच एक सहयोग का परिणाम है।  इस परियोजना को मेडिकल रिसर्च काउंसिल ब्रिटेन द्वारा ग्लोबल चैलेंज रिसर्च फंड फाउंडेशन अवॉर्ड की तरफ से धन-राशि दी गयी है ।
+        \n\n स्टार्ट एक ऐसा मोबाइल प्लेटफॉर्म है  जिसका उपयोग माता-पिता की जानकारी और प्रत्यक्ष बाल  मूल्यांकन को एकत्रित करने के लिए किया जाएगा। उम्मीद है की इस प्लेटफार्म के ज़रिये ऑटिज़्म के संभावित २-५ साल के बच्चों का पता लगने में आसानी होगी। 
+        \n\n साधारणतय ऑटिज़्म ग्रसित बच्चे एक चीज से ध्यान हटा कर दूसरी चीज पर ध्यान लगाने में धीमे होते हैं| वह लोगों से ज्यादा वस्तुओं पर ध्यान देते हैं। यह जांच इसी ज्ञान पर आधारित है, व इसमें ऑटिज़्म के विभिन्न सामाजिक एंवम संवेदना सम्बंधित लक्षणों को जांचने के टेस्ट/ खेल डाले गए हैं। आई  - ट्रैकिंग एक ऐसी तकनीक है  जो कि ऑटिज़्म का पता लगाने में काफी मदद कर सकती है।  उस तकनीक का प्रयोग इस जाँच में बच्चे का ध्यान नापने में किया जाएगा, जबकि व्यवहार प्रतिक्रियाएं टचस्क्रीन के माध्यम से दर्ज की जाएंगी।</string>
+
+    <string name="about_header">परियोजना प्रतिभागी</string>
+
+    <string name="about_header_1">मेडिकल रिसर्च  काउन्सिल</string>
+    <string name="about_message_1">यह एक सार्वजनिक तथा सरकारी वित्तिय संस्था है जो यूनाइटेड किंगडम में चिकित्सा अनुसंधान के समन्वय और वित्तपोषण के लिए जिम्मेदार है। इस संस्था ने ग्लोबल चैलेंज रिसर्च फंड फाउंडेशन अवार्ड के अंतर्गत स्टॉर्ट परियोजना को वित्त पोषित किया है</string>
+
+    <string name="about_header_2">रेडिंग विश्वविद्यालय</string>
+    <string name="about_message_2">यह विश्वविद्यालय (बर्कशायर, इंग्लैंड में स्थित) 1892 में एक सार्वजनिक विश्वविद्यालय के रूप में स्थापित किया गया है। स्टार्ट परियोजना इस विश्विद्यालय के मनोविज्ञान के प्रोफेसर भीष्मादेव चक्रवर्ती के नेतृतव में चलायी जा रही है</string>
+
+    <string name="about_header_3">पब्लिक हेल्थ फाउंडेशन ऑफ़ इंडिया</string>
+    <string name="about_message_3">पीएचएफआई सार्वजनिक स्वास्थ्य के क्षेत्र में शिक्षा, प्रशिक्षण, अनुसंधान और नीति विकास को मजबूत करने के लिए भारत में संस्थागत और सिस्टम क्षमता का निर्माण करने में मदद कर रहा है।
+        \nपरियोजना सहयोगी: <b> प्रोफेसर विक्रम पटेल </b></string>
+
+    <string name="about_header_4">बर्कबेक विश्वविद्यालय </string>
+    <string name="about_message_4">बर्कबेक विश्वविद्यालय एक सार्वजनिक अनुसंधान विश्वविद्यालय है, जो कि लंदन, इंग्लैंड के ब्लूमस्बरी में स्थित है इसे 1823 में स्थापित किया गया था।
+        \nपरियोजना सहयोगी: <b> मार्क जॉनसन </b> और <b> टियोडोरा ग्लिगा</b></string>
+
+    <string name="about_header_5">नॉटिंहम ट्रेंट विश्वविद्यालय</string>
+    <string name="about_message_5">उच्च शिक्षा के कई अलग-अलग संस्थानों के एकीकरण के द्वारा इस विश्वविद्यालय का गठन किया गया था। यह विश्वविद्यालय 1843 में स्थापित नॉटिंघम गवर्नमेंट स्कूल ऑफ डिजाइन से उत्पन्न हुआ
+        \nपरियोजना सहयोगी: <b> मैथ्यू बेलमोन </b></string>
+
+    <string name="about_header_6">ऑल इंडिया इंस्टिट्यूट ऑफ मेडिकल साइंसेस</string>
+    <string name="about_message_6">ऑल इंडिया इंस्टीट्यूट ऑफ मेडिकल साइंसेज (एम्स) उच्च शिक्षा के स्वायत्त सार्वजनिक चिकित्सा महाविद्यालयों का एक समूह है। एम्स नई दिल्ली, 1 9 56 में स्थापित किया गया था।
+       \nपरियोजना सहयोगी: <b> डॉ शेफाली गुलाटी</b></string>
+
+    <string name="about_header_7">संगत </string>
+    <string name="about_message_7">संगत एक गैर-सरकारी, गैर-लाभकारी संगठन है जो उचित शारीरिक, मनोवैज्ञानिक और सामाजिक चिकित्सा प्रदान करने के लिए मौजूदा सामुदायिक संसाधनों को सशक्त करने पर काम कर रहा है 
+        \nपरियोजना सहयोगी: <b> गौरी दिवाण</b></string>
+
+    <string name="about_header_8">इंडियन इंस्टिट्यूट ऑफ़ टेक्नोलॉजी मुंबई </string>
+    <string name="about_message_8">आईआईटी, मुंबई, भारत में स्थित एक सार्वजनिक इंजीनियरिंग संस्थान है। यह इंडियन इंस्टिट्यूट ऑफ टेक्नोलॉजी सिस्टम में दूसरा सबसे पुराना  इंस्टिट्यूट है।
+     \nपरियोजना सहयोगी: <b> प्रोफेसर शरत चंद्रन</b></string>
+
+    <string name="about_header_9">थेरेपी बॉक्स </string>
+    <string name="about_message_9">थेरेपी बॉक्स एक बहु-पुरस्कार विजेता सॉफ्टवेयर विकास कंपनी है, जिसमें स्वास्थ्य देखभाल और शिक्षा नवप्रवर्तन में विशेषज्ञता वाला ट्रैक रिकॉर्ड है। हमें नवाचार के लिए कई अंतरराष्ट्रीय पुरस्कार प्राप्त हुए हैं और हम जटिल और विशेष विकास परियोजनाओं पर विश्वविद्यालयों के साथ काम करने में इस विशेषज्ञता को लाते हैं
+        \nपरियोजना प्रतिभागियों: <b> स्वप्निल गाडगील, रेबेका ब्राइट, नादिर इब्राहिमोव </b></string>
+
+    <!-- User Guide -->
+    <string name="user_guide_header_1">लॉगिन करें और पासवर्ड को पुनर्स्थापित करें</string>
+    <string name="user_guide_message_1">ऐप शुरू करने के लिए, अपना यूजर नेम (उपयोगकर्ता नाम) और पासवर्ड डालें और "साइन इन" बटन दबाएं। सिस्टम में लॉग इन करने के लिए ऐप में इंटरनेट कनेक्शन होना चाहिए। एक बार जब आप सफलतापूर्वक लॉग इन करते हैं, तो एप्लिकेशन को ऑफ़लाइन मोड  में (बिना इंटरनेट के) उपयोग किया जा सकता है। डेटा की सुरक्षा के लिए, एक समय के बाद सिस्टम अपने आप बंद हो जाएगा। हालांकि, आप मेनू में "लॉगआउट" आइकन दबाए जाने तक ऑफ़लाइन मोड में फिर से प्रवेश कर पाएंगे। "लॉगआउट" आइकन दबाए जाने के बाद, ऐप को फिर से लॉगिन करने के लिए इंटरनेट कनेक्शन की आवश्यकता होगी। यदि आप पासवर्ड को गलत तरीके से 5 बार डालतें हैं, तो ऐप को बंद कर दिया जाएगा और जब तक आपका सुपरवाइज़र आपका खाता नहीं खोलता तब तक आप फिर से लॉगिन नहीं कर पाएंगे।
+    \n\nअपना नया पासवर्ड बनाने के लिए, एप के पहले पेज पर "पासवर्ड भूल गए?" बटन दबाएं, अपना यूजर-नेम (उपयोगकर्ता नाम) और जन्म की तारीख डालें | यदि वे सही ढंग से डाले गए हैं तो आप अपना नया पासवर्ड बना पाएंगे | एक नया पासवर्ड बनाने के लिए, ऐप में इंटरनेट कनेक्शन होना चाहिए। </string>
+
+    <string name="user_guide_header_2">बच्चे और माता/पिता का रजिस्ट्रेशन (पंजीकरण) </string>
+    <string name="user_guide_message_2">नए बच्चे को रजिस्टर करने के लिए, मेरे सर्वे पेज पर "जोड़ें" का बटन दबाएं। पहले पेज में, आप बच्चे की जानकारी डालेंगे (सभी जानकारी डालना जरुरी है)। आप तस्वीर वाले हिस्से को छूकर फोटो ले सकते हैं या कैमरा या गैलरी से तस्वीर ले कर डाल सकते हैं| 
+पहले से मौजूद बीमारी/तकलीफ (यह जानकारी डालना आगे बढ़ने ने किये जरुरी नहीं है, पर अगर बच्चे को कोई भी तकलीफ है तो उसकी जानकारी ज़रूर डालें) की जानकारी को डालने के लिए, बच्चे की तस्वीर के नीच बने बटन को दबाएं| यदि आप सभी जानकारी को सही ढंग से डालते हैं, तो ऊपरी बाएं कोने में आगे जाने का बटन दिखने लगेगा इस बटन को दबाकर आप अभिभावक/माता/पिता के रजिस्ट्रेशन पेज पर पहुँच जांएंगे|   
+        
+        \n\nइस पेज पर, फोन और ईमेल के अलावा सभी जानकारियां डालना जरुरी है | "राज्य" और "बच्चे का पता" बच्चे के पेज से अपने आप आ जाएगा |  हालांकि, यह जानकारी बदली जा सकती है|  यदि आवश्यक नहीं है, तो आप दूसरे अभिभावक का रजिस्ट्रेशन छोड़ सकते हैं।
+        
+        \n\nरजिस्ट्रेशन के बाद, माता पिता को सहमति फॉर्म (कंसेंट फॉर्म) पढ़ने दे / पढ़ कर सुनायें | उनके सहमत होने पर उनसे टैबलेट की स्क्रीन पर ऊँगली से हस्ताक्षर लेेना अनिवार्य है। यदि माता-पिता पढ़ नहीं सकते तो उनसे सर्वे के प्रश्नावली वाले पेज़ में जाकर वीडियो के द्वारा सहमति लें | इस वीडियो में माता-पिता को यह बोलना जरुरी है की उन्हें इस परियोजना के बारे में स्पष्ट रूप से समझा दिया गया है और सवाल पूछने के अवसर दिए गए हैं तथा वह इस परियोजना में अपने बच्चे के साथ भाग लेने के लिए सहमत हैं  यदि आपने दोनों माता-पिता को रजिस्टर (पंजीकृत) किया है, तो उनमें से कोई भी एक हस्ताक्षर कर के सहमति दे सख्ता है |  </string>
+
+    <string name="user_guide_header_3">सर्वे कैसे शुरू करें </string>
+    <string name="user_guide_message_3">आप बच्चे को रजिस्टर करने के बाद बच्चे के प्रोफाइल पेज से तुरंत ही सर्वे शुरू कर  सकते हैं
+    \n\nअगले पेज पर बने टेस्टस में से आप किसी भी टेस्ट से जांच शुरू कर सकते हैं | यही आप बच्चे के प्रोफाइल पेज से जांच शुरू कर रहे हैं तो पहले नए सर्वे को चुने व उसके बाद टेस्ट चुने | 
+    \n\nकिसी भी क्रम में किसी भी टेस्ट से सर्वे शुरू किया जा सकता है। हर टेस्ट (प्रश्नावली को छोड़कर) में तीन कोशिश किये जा सकते हैं हर टेस्ट के बाद आपको बच्चे के प्रोफ़ाइल पेज पर वापस लौटने के लिए कहा जाएगा, ऐसे में आप या तो एक नयी कोशिश कर सकते हैं या अगले टेस्ट पर जा सकते हैं । अगर यह टेस्ट फेल हो गया था, तो आप सर्वे के पहले पेज से एक नयी कोशिश शुरू कर सकते हैं या एक नया टेस्ट शुरू कर सकते हैं।</string>
+
+    <string name="user_guide_header_4">टेस्ट के सामान्य निर्देश </string>
+    <string name="user_guide_message_4">टेस्ट शुरू करने के लिए, आपको टैबलट को एक समतल और स्थिर सतह पर रखें। कृपया सुनिश्चित करें कि कमरे में रौशनी ठीक से है
+        \n\nआई -ट्रैकिंग (ध्यान वाली गेम) के लिए, ध्यान रहे की टैबलेट के कैमरे पर कोई दूसरी सीधी रोशनी नहीं पड़ रही है और टैबलेट चेहरे से 30-50 सेंटीमीटर की दूरी पर रखा गया है | 
+        \n\nप्रत्येक टेस्ट (आई -ट्रैकिंग को छोड़कर) से पहले, आप बच्चे को प्रैक्टिस या डेमो  दिखा सकते हैं| प्रैक्टिस/डेमो के दौरान किये गए व्यवहार को असली टेस्ट के परिणाम की तरह रिकॉर्ड नहीं किया जाएगा और उनका डेटा सुरक्षित (सेव) नहीं किया जाएगा।
+        \n\nआप किसी भी टेस्ट को स्क्रीन पर 3 उंगलियों से बायीं से दायीं ओर लम्बी लकीर खींच कर बीच में ही ख़त्म कर सकते हैं। यदि ऐसा होता है, तो टेस्ट में एक अलग  "खत्म/निरस्त" का नाम डाल दिया जाएगा और टेस्ट के परिणाम को रोक दिया जाएगा। आप फिर से डेटा रिकॉर्डिंग शुरू करने के लिए एक नयी कोशिश कर पाएंगे|  कृपया याद रहे ऐसा प्रश्नावली के अलावा और सभी टेस्टस में किया जा सकता है ।
+    </string>
+    <string name="user_guide_header_5">सर्वे अपलोड </string>
+    <string name="user_guide_message_5">सर्वे पूरा होने के बाद, और यदि ऐप में इंटरनेट कनेक्शन है, तो आप सर्वे पेज पर अपलोड बटन दबाकर सर्वे अपलोड कर सकते हैं। अपलोड किए जाने के बाद (सर्वे बटन पर हरा रंग अपलोड की स्थिति दिखाएगा), इसके बाद आप ऐप से सर्वे को हटा भी सकते हैं।  अपलोड किये बिना सर्वे को ऐप से न हटाएं। </string>
+
+    <string name="user_guide_header_6">सर्वे अपलोड</string>
+    <string name="user_guide_message_6">आप बच्चे के प्रोफ़ाइल पेज पर डाउनलोड आइकन दबाकर सर्वर से हटाए गए सर्वे डाउनलोड कर सकते हैं। सर्वे डाउनलोड करने के बाद, आप नयी कोशिशों / सर्वे को जोड़ सकते हैं </string>
+
+    <string name="user_guide_header_7">भाषा बदलें</string>
+    <string name="user_guide_message_7">भाषा बदलने के लिए, मुख्य पेज के ऊपरी दाईं ओर बने "मेनू" आइकन को दबाएं। नए पेज पर आपको भाषा चुनने (ऊपरी दाएं कोने) का मौका मिलेगा। ऐप की भाषा बदलने के इसे लिए दुबारा शुरू करने की जरुरत पड़ेगी | </string>
+
+    <string name="user_guide_header_8">सुरक्षा के निर्देश </string>
+    <string name="user_guide_message_8">सर्वे तथा टैबलेट की सुरक्षा के लिए इन नियमों का पालन करें:
+        \n - टैबलेट को खाली/अकेला न छोड़ें।
+        \n - अपने टैबलेट को अपरिचित लोगों को इस्तेमाल ना करने दें ।
+        \n - किसी को कभी भी पासवर्ड और यूजर नेम (उपयोगकर्ता नाम) ना बताएं|  यहां तक कि आपके सुपरवाइज़र को भी आपके पासवर्ड की ज़रूरत नहीं है
+        \n - अगर डिवाइस खो जाए तो तुरंत अपने सुपरवाइज़र को रिपोर्ट करें।
+    </string>
+
+    <!-- Card / Items -->
+    <string name="card_birth_date">जन्म की तारीख: %s</string>
+    <string name="card_state">राज्य: %s</string>
+    <string name="card_birth_date_value">जन्म की तारीख</string>
+    <string name="card_gender_value">लिंग</string>
+    <string name="card_state_value">राज्य</string>
+    <string name="card_user_info_date">तारीख: %s</string>
+    <string name="survey_test_attempt_1">पहली कोशिश </string>
+    <string name="survey_test_attempt_2">दूसरी कोशिश </string>
+    <string name="survey_test_attempt_3">तीसरी कोशिश </string>
+    <string name="survey_test_time">टेस्ट का समय: %s</string>
+    <string name="survey_test_add">नयी कोशिश करें </string>
+    <string name="survey_test_interrupted">टेस्ट ख़त्म कर दें </string>
+
+    <!-- General -->
+    <string name="take_photo">तस्वीर लें</string>
+
+    <!-- Notification -->
+    <string name="survey_upload_notification">सर्वे अपलोड किया जा रहा है</string>
+    <string name="survey_download_notification">सर्वे डाउनलोड किया जा रहा है </string>
+
+    <!-- Language -->
+    <string name="language_dialog_title">भाषा बदल दी गई थी</string>
+    <string name="language_dialog_message">भाषा में बदलाव लाने के लिए एप्लीकेशन को दुबारा शुरू होगा |  क्या आप एप्लीकेशन को दुबारा शुरू करना चाहते हैं ?</string>
+
+    <!-- Admin page -->
+    <string name="admin_title">Administrator settings</string>
+    <string name="admin_server_hint">Server</string>
+</resources>

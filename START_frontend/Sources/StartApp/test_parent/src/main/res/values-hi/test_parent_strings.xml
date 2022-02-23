@@ -1,0 +1,26 @@
+<resources>
+
+    <!-- General -->
+    <string name="test_parent_name">प्रश्न-उत्तर</string>
+    <string name="test_parent_actionbar_text_default">प्रश्न-उत्तर</string>
+
+    <!-- Test instructions -->
+    <string name="test_parent_actionbar_parent_assessment">अभिभावक से ली गयी जानकारी</string>
+    <string name="test_parent_action_bar_test_result">प्रश्न के वीडियो</string>
+    <string name="test_parent_result">Answered = %1$s \n Total = %2$s</string>
+
+    <!-- Test parent training -->
+    <string name="test_parent_card_question_button_always">हमेशा</string>
+    <string name="test_parent_card_question_button_sometimes">अक्सर</string>
+    <string name="test_parent_card_question_button_rarely">कभी-कभी</string>
+    <string name="test_parent_card_question_button_never">कभी नहीं</string>
+    <string name="test_parent_card_question_button_video1">वीडियो  1</string>
+    <string name="test_parent_card_question_button_video2">वीडियो  2</string>
+
+    <!-- Dialogs -->
+    <string name="test_paren_dialog_success_title">यह टेस्ट पूरा हो गया है </string>
+    <string name="test_paren_dialog_success_message">क्या आप अपने जवाब सेव करना चाहते हैं व अगली गेम पर जाना चाहते हैं ? कृपया ध्यान रखें कि एक बार जवाब सेव करने के बाद न तो उन्हें बदला जा सकता है और न ही आपको प्रश्न - उत्तर करने का दूसरा मौका दिया जाएगा| </string>
+    <string name="test_paren_dialog_interrupted_title">टेस्ट को बीच में रोका गया था</string>
+    <string name="test_paren_dialog_interrupted_message">क्या आप वापिस जाना चाहते हैं ? एक नयी कोशिश करें या नयी गेम शुरू करें</string>
+
+</resources>

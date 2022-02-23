@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/dialog_big_width"
+    android:layout_height="@dimen/dialog_big_height"
+    android:background="@drawable/dialog_background"
+    android:minHeight="@dimen/dialog_big_height"
+    android:minWidth="@dimen/dialog_big_width"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_back"
+            android:layout_width="@dimen/dialog_button_width"
+            android:layout_height="@dimen/dialog_button_height"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:src="@drawable/dialog_button_left" />
+
+        <TextView
+            android:id="@+id/dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="@color/testDialogTitleColor"
+            android:textSize="@dimen/text_size_title"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/button_next"
+            android:layout_width="@dimen/dialog_button_width"
+            android:layout_height="@dimen/dialog_button_height"
+            android:background="@android:color/transparent"
+            android:gravity="center"
+            android:src="@drawable/dialog_button_right" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/signature_holder"
+        android:layout_width="@dimen/dialog_consent_confirm_signature_pad_width"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <com.github.gcacace.signaturepad.views.SignaturePad
+            android:id="@+id/signature_pad_1"
+            android:layout_width="@dimen/dialog_consent_confirm_signature_pad_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            app:clearOnDoubleClick="true"
+            app:penColor="@android:color/black"
+            app:penMaxWidth="@dimen/dialog_consent_confirm_signature_pad_pen_size"
+            app:penMinWidth="@dimen/dialog_consent_confirm_signature_pad_pen_size" />
+
+        <com.github.gcacace.signaturepad.views.SignaturePad
+            android:id="@+id/signature_pad_2"
+            android:layout_width="@dimen/dialog_consent_confirm_signature_pad_width"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:clearOnDoubleClick="true"
+            app:penColor="@android:color/black"
+            app:penMaxWidth="@dimen/dialog_consent_confirm_signature_pad_pen_size"
+            app:penMinWidth="@dimen/dialog_consent_confirm_signature_pad_pen_size" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/divider" />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp"
+        android:checkedButton="@+id/parent_1_radio_button"
+        android:gravity="center_horizontal|top"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/parent_1_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/radio_button_margin"
+            android:layout_marginStart="@dimen/radio_button_margin"
+            android:button="@null"
+            android:textColor="@drawable/radio_button"
+            android:textSize="@dimen/text_size_general" />
+
+        <RadioButton
+            android:id="@+id/parent_2_radio_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/radio_button_margin"
+            android:layout_marginStart="@dimen/radio_button_margin"
+            android:button="@null"
+            android:textColor="@drawable/radio_button"
+            android:textSize="@dimen/text_size_general" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@+id/checkbox_agree"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|center_vertical"
+        android:layout_marginBottom="@dimen/radio_button_margin"
+        android:layout_marginEnd="@dimen/radio_button_margin"
+        android:layout_marginStart="@dimen/radio_button_margin"
+        android:layout_marginTop="@dimen/radio_button_margin"
+        android:button="@drawable/check_box_2"
+        android:drawablePadding="6dp"
+        android:gravity="left|center_vertical"
+        android:text="@string/consent_dialog_agree"
+        android:textColor="@color/color_radio_dark"
+        android:textSize="@dimen/checkbox_text_size_general" />
+</LinearLayout>

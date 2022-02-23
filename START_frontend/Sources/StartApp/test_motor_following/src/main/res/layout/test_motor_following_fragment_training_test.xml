@@ -1,0 +1,70 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/action_bar"
+            layout="@layout/test_motor_following_action_bar" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/test_motor_following_training_coloring_layout_margin"
+            android:layout_weight="1"
+            android:background="@drawable/card_background_border"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bee_background" />
+
+            <com.reading.start.tests.test_motor_following.ui.views.MotorFollowingView
+                android:id="@+id/motor_following_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.reading.start.tests.test_motor_following.ui.views.CompleteTriggerView
+                android:id="@+id/completeTriggerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/test_motor_following_instruction"
+                android:textSize="20sp" />
+
+            <ImageButton
+                android:id="@+id/button_start"
+                style="@style/test_motor_following_ButtonGeneral"
+                android:layout_gravity="center"
+                android:layout_marginBottom="@dimen/test_motor_following_test_instruction_layout_margin_bottom"
+                android:layout_marginTop="@dimen/test_motor_following_test_instruction_button_margin_top"
+                android:gravity="center" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</layout>

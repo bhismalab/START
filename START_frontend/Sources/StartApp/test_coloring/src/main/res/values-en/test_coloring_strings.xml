@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- General -->
+    <string name="test_coloring_name">Colouring test</string>
+    <string name="test_coloring_actionbar_text_default">Colouring test. Demonstration</string>
+    <string name="test_coloring_instruction">Colour the pictures. Once child is finished, press on the save icon to store the results.</string>
+
+    <!-- Test Result -->
+    <string name="test_coloring_action_bar_test_result_1">Colouring test result: first attempt</string>
+    <string name="test_coloring_action_bar_test_result_2">Colouring test result: second attempt</string>
+    <string name="test_coloring_action_bar_test_result_3">Colouring test result: third attempt</string>
+
+    <!-- Dialogs -->
+    <string name="test_coloring_dialog_success_title">Test Completed</string>
+    <string name="test_coloring_dialog_success_message">Do you want to go back, make new attempt or start next test?</string>
+    <string name="test_coloring_dialog_interrupted_title">Test was aborted</string>
+    <string name="test_coloring_dialog_interrupted_message">Do you want to go back, make new attempt or start next test?</string>
+
+    <!-- Upload -->
+    <string name="test_coloring_upload_error">An error occurred while uploading Colouring test</string>
+
+</resources>
+

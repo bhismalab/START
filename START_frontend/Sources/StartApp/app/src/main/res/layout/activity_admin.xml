@@ -1,0 +1,43 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/color_background">
+
+        <include
+            android:id="@+id/action_bar"
+            layout="@layout/action_bar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/server"
+                    style="@style/EditTextGeneralDivided"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/view_margin_default"
+                    android:hint="@string/admin_server_hint"
+                    android:inputType="textCapSentences"
+                    android:maxLines="1"
+                    android:singleLine="true"
+                    android:textColorHint="@color/color_hint" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,21 @@
+<resources>
+    <!-- General -->
+    <string name="test_eye_tracking_name">ध्यान लगाने की गेम</string>
+    <string name="test_eye_tracking_status_ok">ध्यान लगाने की गेम  शुरू करने के लिए बटन दबाएं </string>
+
+    <!-- Test Result -->
+    <string name="test_eye_tracking_assessment_actionbar_1">ध्यान लगाने की गेम 1</string>
+    <string name="test_eye_tracking_assessment_actionbar_2">ध्यान लगाने की गेम 2</string>
+    <string name="test_eye_tracking_attention_actionbar">ध्यान लगाने की गेम</string>
+    <string name="test_eye_tracking_action_bar_test_result_1">ध्यान लगाने की गेम : पहली कोशिश</string>
+    <string name="test_eye_tracking_action_bar_test_result_2">ध्यान लगाने की गेम : दूसरी कोशिश </string>
+    <string name="test_eye_tracking_action_bar_test_result_3">ध्यान लगाने की गेम : तीसरी कोशिश</string>
+    <string name="test_eye_tracking_result">Gaze detection = %1$s\nOn the screen = %2$s</string>
+
+    <!-- Dialogs -->
+    <string name="test_eye_tracking_dialog_success_title">यह गेम पूरी हो गयी है </string>
+    <string name="test_eye_tracking_dialog_success_message">क्या आप वापिस जाना चाहते हैं ? एक नयी कोशिश करें या नयी गेम शुरू करें</string>
+    <string name="test_eye_tracking_dialog_interrupted_title">गेम को बीच में रोका गया था </string>
+    <string name="test_eye_tracking_dialog_interrupted_message">क्या आप वापिस जाना चाहते हैं ? एक नयी कोशिश करें या नयी गेम शुरू करें</string>
+
+</resources>

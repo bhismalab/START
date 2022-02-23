@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/child_card_width"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/child_card_layout_margin_bottom"
+        android:layout_marginEnd="@dimen/child_card_layout_margin_end"
+        android:layout_marginStart="@dimen/child_card_layout_margin_start"
+        android:background="@drawable/my_survey_item_background">
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:src="@drawable/button_add" />
+
+    </RelativeLayout>
+</LinearLayout>

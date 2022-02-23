@@ -1,0 +1,468 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.reading.start.tests.test_eye_tracking.ui.fragments.EyeTrackingLookingTestFragment">
+
+        <LinearLayout
+            android:id="@+id/settings_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/action_bar"
+                layout="@layout/test_eye_tracking_action_bar" />
+
+            <RelativeLayout
+                android:layout_width="625dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:gravity="center_horizontal">
+
+                <com.reading.start.sdk.ui.view.CameraDetectView
+                    android:id="@+id/fd_activity_surface_view"
+                    android:layout_width="625dp"
+                    android:layout_height="500dp"
+                    android:layout_centerInParent="true" />
+
+                <com.reading.start.sdk.ui.view.AutoFitTextureView
+                    android:id="@+id/texture"
+                    android:layout_width="625dp"
+                    android:layout_height="500dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/instruction"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:text="@string/sdk_test_instruction"
+                    android:textSize="@dimen/default_text_size"
+                    android:visibility="gone" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingStart="200dp">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/device_position"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sdk_test_device_position"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <TextView
+                            android:id="@+id/device_position_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/device_position"
+                            android:text="@string/sdk_test_ok"
+                            android:textColor="@color/colorOK"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <TextView
+                            android:id="@+id/device_jolting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/device_position"
+                            android:text="@string/sdk_test_device_shake"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <TextView
+                            android:id="@+id/device_jolting_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/device_position"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/device_jolting"
+                            android:text="@string/sdk_test_ok"
+                            android:textColor="@color/colorOK"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <TextView
+                            android:id="@+id/light_environment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/device_jolting"
+                            android:text="@string/sdk_test_light_of_environment"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <TextView
+                            android:id="@+id/light_environment_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/device_jolting"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/light_environment"
+                            android:text="@string/sdk_test_ok"
+                            android:textColor="@color/colorOK"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <TextView
+                            android:id="@+id/light_camera"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/light_environment"
+                            android:text="@string/sdk_test_light_of_camera"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <TextView
+                            android:id="@+id/light_camera_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/light_environment"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/light_camera"
+                            android:text="@string/sdk_test_ok"
+                            android:textColor="@color/colorOK"
+                            android:textSize="@dimen/default_text_size" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/head_detect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/sdk_test_head_detect"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <TextView
+                            android:id="@+id/head_detect_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/head_detect"
+                            android:text="@string/sdk_test_ok"
+                            android:textColor="@color/colorOK"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <TextView
+                            android:id="@+id/head_distance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/head_detect"
+                            android:text="@string/sdk_test_head_distance"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <TextView
+                            android:id="@+id/head_distance_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/head_detect"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/head_distance"
+                            android:text="@string/sdk_test_ok"
+                            android:textColor="@color/colorOK"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <TextView
+                            android:id="@+id/eye_detect"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/head_distance"
+                            android:text="@string/sdk_test_eye_detect"
+                            android:textSize="@dimen/default_text_size" />
+
+                        <TextView
+                            android:id="@+id/eye_detect_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/head_distance"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/eye_detect"
+                            android:text="@string/sdk_test_ok"
+                            android:textColor="@color/colorOK"
+                            android:textSize="@dimen/default_text_size" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="@dimen/test_eye_tracking_button_general_width"
+                    android:layout_height="@dimen/test_eye_tracking_button_general_height" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/sdk_test_ok"
+                    android:textSize="@dimen/default_text_size" />
+
+                <ImageButton
+                    android:id="@+id/start_test"
+                    style="@style/test_eye_tracking_ButtonGeneral"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/test_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/buckground_jungle"
+            android:visibility="invisible">
+
+            <RelativeLayout
+                android:id="@+id/image_area"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/test_screen_background"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop" />
+
+                <RelativeLayout
+                    android:id="@+id/image_test_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/image_center"
+                        android:layout_width="@dimen/test_eye_tracking_stimul_size"
+                        android:layout_height="@dimen/test_eye_tracking_stimul_size"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/stimul_center" />
+
+                    <ImageView
+                        android:id="@+id/image_center_left"
+                        android:layout_width="@dimen/test_eye_tracking_stimul_size"
+                        android:layout_height="@dimen/test_eye_tracking_stimul_size"
+                        android:layout_alignParentStart="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/stimul_center" />
+
+                    <ImageView
+                        android:id="@+id/image_center_right"
+                        android:layout_width="@dimen/test_eye_tracking_stimul_size"
+                        android:layout_height="@dimen/test_eye_tracking_stimul_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_centerVertical="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/stimul_center" />
+
+                    <ImageView
+                        android:id="@+id/image_right_top"
+                        android:layout_width="@dimen/test_eye_tracking_stimul_size"
+                        android:layout_height="@dimen/test_eye_tracking_stimul_size"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="24dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/stimul_center" />
+
+                    <ImageView
+                        android:id="@+id/image_left_top"
+                        android:layout_width="@dimen/test_eye_tracking_stimul_size"
+                        android:layout_height="@dimen/test_eye_tracking_stimul_size"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_margin="24dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/stimul_center" />
+
+                    <ImageView
+                        android:id="@+id/image_right_bottom"
+                        android:layout_width="@dimen/test_eye_tracking_stimul_size"
+                        android:layout_height="@dimen/test_eye_tracking_stimul_size"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_margin="24dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/stimul_center" />
+
+                    <ImageView
+                        android:id="@+id/image_left_bottom"
+                        android:layout_width="@dimen/test_eye_tracking_stimul_size"
+                        android:layout_height="@dimen/test_eye_tracking_stimul_size"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_margin="24dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/stimul_center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/image_fixation_area"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#ffffff"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/fixation_center" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/cursor_state"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <com.reading.start.sdk.ui.view.DetectModeView
+                    android:id="@+id/detect_mode_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/cursor_calibration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/calibration_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/calibration_2"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/calibration_top_left"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:background="#ff0000"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/calibration_top_right"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:background="#ff0000"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/calibration_bottom_left"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="10dp"
+                    android:background="#ff0000"
+                    android:visibility="gone" />
+
+                <View
+                    android:id="@+id/calibration_bottom_right"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="10dp"
+                    android:background="#ff0000"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/calibration_check"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/calibration_check_left"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/calibration_2"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/calibration_check_right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/calibration_2"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <com.reading.start.tests.test_eye_tracking.ui.views.CompleteTriggerView
+                android:id="@+id/completeTriggerView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</layout>

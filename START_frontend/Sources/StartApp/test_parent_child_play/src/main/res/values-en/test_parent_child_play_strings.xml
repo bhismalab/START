@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- General -->
+    <string name="test_parent_child_play_name">Parent-child play</string>
+    <string name="test_parent_child_play_actionbar_text_default">Parent-child play</string>
+
+    <!-- Test instructions -->
+    <string name="test_parent_child_play_action_bar_test_result_1">Parent-child play: first attempt</string>
+    <string name="test_parent_child_play_action_bar_test_result_2">Parent-child play: second attempt</string>
+    <string name="test_parent_child_play_action_bar_test_result_3">Parent-child play: third attempt</string>
+    <string name="test_parent_child_play_action_bar_instruction_colour_the_image">Parent-child play instruction</string>
+
+    <!-- Dialogs -->
+    <string name="test_parent_child_play_dialog_success_title">Test Completed</string>
+    <string name="test_parent_child_play_dialog_success_message">Do you want to go back, make a new attempt, or start the next test?</string>
+    <string name="test_parent_child_play_dialog_interrupted_title">Test was aborted</string>
+    <string name="test_parent_child_play_dialog_interrupted_message">Do you want to go back, make a new attempt, or start the next test?</string>
+
+    <!-- Upload -->
+    <string name="test_parent_child_following_upload_error">An error occurred while uploading Parent-child test</string>
+
+</resources>

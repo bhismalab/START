@@ -1,0 +1,269 @@
+<resources>
+    <string name="app_name">Start</string>
+
+    <!-- Buttons -->
+    <string name="button_allow">Allow</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_login">Sign in</string>
+    <string name="button_open_settings">Open settings</string>
+
+    <!-- Hints -->
+    <string name="hint_username">Username</string>
+    <string name="hint_password">Password</string>
+
+    <!-- Permissions -->
+    <string name="dialog_permission_error_title">Permissions</string>
+    <string name="dialog_permission_error_message">Please allow all permissions. Without them application can\'t work.</string>
+    <string name="dialog_permission_denied_error_message">Application can\'t work without allowed permissions. Please open the settings and allow all required permissions.</string>
+
+    <!-- Screen Titles -->
+    <string name="action_bar_my_surveys_title">My surveys</string>
+    <string name="action_bar_add_child">Add new child</string>
+    <string name="action_bar_add_first_parent">Add first parent</string>
+    <string name="action_bar_add_second_parent">Add second parent</string>
+    <string name="action_bar_edit_child">Edit child\'s info</string>
+    <string name="action_bar_edit_first_parent">Edit first parent\'s info</string>
+    <string name="action_bar_edit_second_parent">Edit second parent\'s info</string>
+    <string name="action_bar_child_information">Child\'s profile</string>
+    <string name="action_bar_survey">Survey %s</string>
+    <string name="action_bar_child_diagnosis">Pre-existing diagnostic info</string>
+    <string name="action_bar_menu">Menu</string>
+    <string name="menu_about_project">About START</string>
+    <string name="menu_user_guide">User guide</string>
+
+    <!-- Menu -->
+    <string name="menu_navigation_user_guide">User guide</string>
+    <string name="menu_navigation_about_project">About the project</string>
+    <string name="menu_navigation_settings">Settings</string>
+    <string name="menu_navigation_log_out">Log out</string>
+    <string name="menu_navigation_english">En</string>
+    <string name="menu_navigation_hindi">Hn</string>
+
+    <!-- TextView Static Text -->
+    <string name="text_male">Male</string>
+    <string name="text_female">Female</string>
+    <string name="text_parent">Parent</string>
+    <string name="text_guardian">Guardian</string>
+
+    <!-- Success messages -->
+    <string name="success_message_password_valid">Password is valid</string>
+    <string name="success_message_password_changed">Password has been changed.</string>
+
+    <!-- Error messages -->
+    <string name="error_message_login_failed_title">Authentication failed</string>
+    <string name="error_message_login_failed">The username and/or password are incorrect. Please check them and try again.</string>
+    <string name="error_message_login_internet_connection_failed">Authentication has failed. Please check your internet connection.</string>
+    <string name="error_message_login_attempt_failed">You can attempt the next login after 30 minutes.</string>
+    <string name="error_message_user_validation">Enter a valid username</string>
+    <string name="error_message_password_validation">Enter a value between 4 and 10 alphanumeric characters</string>
+    <string name="error_message_forgot_password_validation">Please, enter the same passwords.</string>
+    <string name="error_message_forgot_date">Please, enter a correct username and date of birth.</string>
+    <string name="error_message_reset_password">The username and/or date of birth are incorrect. Please check them and try again.</string>
+    <string name="error_message_login_attempts_end">The account was suspended. Please, contact your supervisor to unblock the account.</string>
+    <string name="error_message_error">Error</string>
+    <string name="error_message_upload_general">Unable to upload survey. Please check your internet connection</string>
+    <string name="error_message_upload_internet_connection">Uploading is failed. Please check your internet connection</string>
+    <string name="error_message_upload_add_child">Unable to upload child info. Please check your internet connection</string>
+    <string name="error_message_upload_add_survey">Unable to upload survey info. Please check your internet connection</string>
+    <string name="error_message_upload_test">Unable to upload test %s. Please check your internet connection</string>
+
+    <!-- Consent -->
+    <string name="consent_dialog_header_text">Participant information sheet</string>
+    <string name="consent_sign_dialog_header_text">Parent/Guardian signature</string>
+    <string name="consent_dialog_success_header_text">Successful registration</string>
+    <string name="consent_dialog_success_message_text">The registration was completed successfully. Do you want to visit My surveys page or start the survey?</string>
+    <string name="consent_dialog_paragraph_title_2">Information Sheet</string>
+    <string name="consent_dialog_paragraph_message_1">I, agree for my child to participate in the study, “Evaluating social, emotional, and cognitive development of children”, being conducted by Dr Bhismadev Chakrabarti and Dr Indu Dubey at The University of Reading. I have seen and read a copy of the Participants Information Sheet and have been given the opportunity to ask questions about the study and these have been answered to my satisfaction. I understand that all personal information will remain confidential to the Investigator and arrangements for the storage and eventual disposal of any identifiable material have been made clear to me. I understand that participation in this study is voluntary and that I can withdraw at any time without having to give an explanation.
+        \n\nI am happy to proceed with my child’s participation.</string>
+    <string name="consent_dialog_paragraph_message_2">
+        Supervisor: Dr Bhismadev Chakrabarti
+        \nEmail: b.chakrabarti@reading.ac.uk
+        \nPhone: +44 (0)118 378 5551
+        \n\nExperimenters:
+        \nDr Indu Dubey: i.dubey@reading.ac.uk
+        \n\nWe would be grateful to you if you could assist us by participating in our study exploring social, emotional, and cognitive development of children. The study aims to on develop a set of games and activities that can be used with children of a wide age range to evaluate their development in several areas like motor, language, and other cognitive skills.
+        \n\nYour child’s participation will take approximately 15-20 minutes, during which time the child will be shown several brief games such as popping the bubbles on the screen, colouring images on the tablet pc’s screen, looking at images on the screen while their eye-movement is tracked and recorded. In some games we might need to video record your child’s activities. The games will be divided into small part to ensure that the child is not tired. Session breaks will be taken if child does not appear to be comfortable.
+        \n\nYour and your child’s data will be kept confidential and securely stored, with only an anonymous number identifying it. Information linking that number to the child’s name will be stored securely and separately from the data you provide us. All information collected for the project will be destroyed after a period of 5 years from the completion of the project has elapsed. Taking part in this study is completely voluntary; you may withdraw at any time without having to give any reason. Please feel free to ask any questions (by mailing Indu at i.dubey@reading.ac.uk) that you may have about this study at any point.
+        \n\nThis application has been reviewed by the University Research Ethics Committee and has been given a favourable ethical opinion for conduct
+        \n\nThank you for your help.
+    </string>
+    <string name="consent_dialog_success_surveys">My surveys</string>
+    <string name="consent_dialog_success_start">Start survey</string>
+    <string name="consent_dialog_agree">The procedures have been explained clearly to us, and we have had opportunities to ask questions. Consequently, we are happy to provide consent for our child to take part in this study</string>
+
+    <!-- Login -->
+    <string name="login_password_reset_title">Restore the password</string>
+    <string name="login_password_reset_message">Please, enter your username and date of birth</string>
+    <string name="login_password_set_message">Please, enter new password</string>
+    <string name="login_password_reset_new_password">New password</string>
+    <string name="login_password_reset_confirm_password">Confirm password</string>
+    <string name="login_password_reset_username">Username</string>
+    <string name="login_password_reset_date">MM  /  DD  /  YYYY</string>
+    <string name="login_forgot_password">Forgot password?</string>
+    <string name="synchronize_dialog_error_title">Synchronisation error</string>
+    <string name="synchronize_dialog_error_message">An error occurred during the synchronisation. Please check your internet connection and try again.</string>
+
+    <!-- Logout -->
+    <string name="logout_dialog_title">Log out</string>
+    <string name="logout_dialog_message">Do you really want to exit?</string>
+
+    <!-- Child -->
+    <string name="child_name">Child\'s name</string>
+    <string name="child_surname">Child\'s surname</string>
+    <string name="child_date_of_birth">Tap to set the date of birth</string>
+    <string name="child_address">Child\'s address</string>
+    <string name="child_dialog_edit_close_title">Edit child\'s info</string>
+    <string name="child_dialog_add_close_title">Add new child</string>
+    <string name="child_dialog_edit_close_message">Do you really want to exit without saving?</string>
+    <string name="child_info_pattern">Born on %1$s</string>
+    <string name="child_state_hint">Tap to select the state</string>
+    <string name="child_hand_hint">Hand dominance</string>
+    <string name="child_hand_right">Right</string>
+    <string name="child_hand_left">Left</string>
+    <string name="child_hand_ambidexter">Ambidextrous</string>
+
+    <!-- Parent -->
+    <string name="parent_skip_step_text">Skip this step</string>
+    <string name="parent_name">Parent\'s name</string>
+    <string name="parent_surname">Parent\'s surname</string>
+    <string name="parent_date_of_birth">Tap to set the date of birth</string>
+    <string name="parent_address">Parent\'s address</string>
+    <string name="parent_phone">Phone number</string>
+    <string name="parent_email_address">Email address</string>
+    <string name="parent_language">Tap to select the language</string>
+    <string name="parent_preferable_contact_hint">Preferable method of contact</string>
+    <string name="parent_preferable_contact_not_specified">Not specified</string>
+    <string name="parent_preferable_contact_post">Post</string>
+    <string name="parent_preferable_contact_phone">Phone</string>
+    <string name="parent_preferable_contact_email">Email</string>
+
+    <!-- Survey -->
+    <string name="survey_name">Survey %s</string>
+    <string name="survey_dialog_delete_title">Delete the survey</string>
+    <string name="survey_dialog_delete_message">Are you sure you want to delete the survey? All data will be lost.</string>
+    <string name="survey_dialog_download_title">Download the survey</string>
+    <string name="survey_dialog_download_message">Are you sure you want to download this survey?</string>
+
+    <!-- Child Diagnosis -->
+    <string name="child_diagnosis_clinic_doctor_name">Clinic / Doctor name</string>
+    <string name="child_diagnosis_describe_diagnosis">Describe diagnosis</string>
+    <string name="child_diagnosis_assessment_date">Tap to set the diagnosis date</string>
+
+    <!-- Validation -->
+    <string name="validation_incorrect_name">Incorrect name</string>
+    <string name="validation_incorrect_surname">Incorrect surname</string>
+    <string name="validation_incorrect_address">Incorrect address</string>
+    <string name="validation_incorrect_phone_number">Incorrect phone number</string>
+    <string name="validation_incorrect_email">Incorrect email</string>
+
+    <!-- Progress Dialog -->
+    <string name="progress_dialog_upload_survey">Survey is being uploaded. Please wait.</string>
+
+    <!-- About -->
+    <string name="about_text">The START project is the result of a collaboration between University of Reading, Public Health Foundation of India, Birkbeck University of London, Nottingham Trent University, All India Institutes of Medical Sciences, Sangath, Indian Institute of Technology Bombay and Therapy Box®. This project is funded by a Global Challenge Research Fund Foundation Award by the Medical Research Council UK.
+        \n\n START is a scalable, modular and extensible mobile platform that will be used to collect parent report and direct child assessment to help detect probable cases of ASD in children aged 2-5 years.
+        \n\n Children with ASD on average take longer to disengage attention from prior stimuli, and do not prefer social stimuli (e.g. faces, voices, gestures) over non-social ones. The app will build on this knowledge and include assessments for different sensory, perceptual and social-behavioural aspects of autism. Eye-tracking, a promising technology for assessing ASD risk, will be used to measure overt attention as indexed by gaze, while behavioural responses will be recorded via touchscreen.</string>
+
+    <string name="about_header">Project Participants</string>
+
+    <string name="about_header_1">Medical Research Council</string>
+    <string name="about_message_1">It is a publicly funded government agency responsible for coordinating and funding medical research in the United Kingdom.  Council funded the START project by Global Challenge Research Fund Foundation Award</string>
+
+    <string name="about_header_2">University of Reading</string>
+    <string name="about_message_2">The University (located in Berkshire, England) was established in 1892 as a public university. The START project runs under the supervision of the School of Psychology and Clinical Language Science and Professor <b>Bhismadev Chakrabarti</b>.</string>
+
+    <string name="about_header_3">Public Health Foundation of India</string>
+    <string name="about_message_3">PHFI is helping to build institutional and system capacity in India for strengthening education, training, research and policy development in the area of Public Health.
+        \nProject collaborator: <b>Ph.D Vikram Patel</b></string>
+
+    <string name="about_header_4">Birkbeck University of London</string>
+    <string name="about_message_4">Birkbeck College is a public research university located in Bloomsbury, London, England, and was established in 1823.
+        \nProject collaborators: <b>Mark Johnson</b> and <b>Teodora Gliga</b></string>
+
+    <string name="about_header_5">Nottingham Trent University</string>
+    <string name="about_message_5">The university was formed by the amalgamation of many separate institutions of higher education. It originated from the Nottingham Government School of Design founded in 1843.
+        \nProject collaborators: <b>Matthew Belmonte</b></string>
+
+    <string name="about_header_6">All India Institutes of Medical Sciences</string>
+    <string name="about_message_6">The All India Institutes of Medical Sciences (AIIMS) is a group of autonomous public medical colleges of higher education. AIIMS New Delhi, the fore-runner parent excellence institution, was established in 1956.
+        \nProject collaborators: <b>Sheffali Gulati</b></string>
+
+    <string name="about_header_7">Sangath</string>
+    <string name="about_message_7">Sangath is a non-governmental, not-for-profit organisation committed to improving health across the life span by empowering existing community resources to provide appropriate physical, psychological and social therapies.
+        \nProject collaborators: <b>Gauri Divan</b></string>
+
+    <string name="about_header_8">Indian Institute of Technology Bombay</string>
+    <string name="about_message_8">The IIT Bombay is a public engineering institution located in Powai, Mumbai, India. It is the second-oldest (after Indian Institute of Technology Kharagpur) institute of the Indian Institutes of Technology system.
+        \nProject collaborators: <b>Sharat Chandran</b></string>
+
+    <string name="about_header_9">Therapy Box</string>
+    <string name="about_message_9">Therapy Box is a multi award winning software development company, specializing in healthcare and education innovation. We have received numerous international awards for innovation and we bring this expertise in working with universities on complex and special development projects
+        \nProject participants: <b>Swapnil Gadgil, Rebecca Bright, Nadir Ibrahimov</b></string>
+
+    <!-- User Guide -->
+    <string name="user_guide_header_1">Login and restore the password</string>
+    <string name="user_guide_message_1">To log into the app, enter your username and password and press the “Sign in” button. The app must have the Internet connection to log in into the system. Once you log in successfully, the app can be used in an offline mode. To protect the data, the system logs out automatically after a timeout period. However, you will be able to log in again even in offline mode until the “Logout” icon is pressed in the menu section.  Once the “Logout” icon has been pressed, the app will require the internet connection to login again. If you enter the password incorrectly 5 times, the app will be blocked and you won’t be able to login again until a Super user unblocks your account.
+    \n\nTo restore your password, press the “Forgot password?” link on the main page of the app. Enter your username and the date of birth. If they are entered correctly, you will be able to reset your password. To select a new password, the app must have the internet connection.</string>
+
+    <string name="user_guide_header_2">Child and Parent registration</string>
+    <string name="user_guide_message_2">To register a child, press the \"+\" button on the My surveys page. In the first step, you will be required to enter the child\'s details (all fields are mandatory).  You can take or choose a photo (from camera or gallery) by pressing a child\'s default icon. To insert pre-existing diagnostic info (it isn’t mandatory), press the icon under the child\'s photo. If you insert all information correctly, the Next button at the top left corner will become active. By pressing this button you will be redirected to the parent registration page.
+        \n\nOn this page, all fields except phone and email address are required. The fields State and Address inherit the information from the child registration. However, this information can be changed. You can skip the second parent registration if it is not necessary.
+        \n\nAfter registration, the parent(s) must read and confirm the consent form and sign the form. If you registered both parents, you can select which of them will sign the approval.</string>
+
+    <string name="user_guide_header_3">How to start the survey?</string>
+    <string name="user_guide_message_3">You can start a new survey straight after a registration process or from the Child\'s profile page.
+    \n\nIn the first option, you must select a corresponding icon on the pop-up window.  To start a survey from the Child\'s profile page you must press on the new survey button \"+\" and select the assessment.
+    \n\nThe survey can be started from any assessment in any sequence. Each assessment (except Questionnaire) has three attempts.  After each assessment you will be asked to return back to the Child\'s profile page, make a new attempt or move on to the next test.  If a assessment was failed, you can begin a new attempt from the survey page or start a new survey.</string>
+
+    <string name="user_guide_header_4">Assessment: general instructions</string>
+    <string name="user_guide_message_4">To conduct assessments, you must place the device on a flat and stable surface. Please ensure that the room has sufficient lighting.
+        \n\nFor eye-tracking assessment, it is important to avoid direct lighting on the device\'s camera (camera illumination) and place the device at a distance of 30-50 cm from the face.
+        \n\nBefore each  assessment (except eye-tracking), you will be required to demonstrate a demo trial to a child. A demo trial won\'t be regarded as a real attempt and its data won\'t be saved.
+        \n\nYou can abort any assessment by drawng a special pattern on the screen (draw 3 fingers from the left edge of the screen to the right one). If this happens, the test will have a special "Aborted" status and the test results will be interrupted.  You will be able to make a new attempt (besides Questionnaire) to begin recording data again.</string>
+
+    <string name="user_guide_header_5">Survey upload</string>
+    <string name="user_guide_message_5">Once the survey is finished, and if the app has the Internet connection, you can upload the survey on the main page by pressing the upload icon on the Survey page. Once it has been uploaded (the green indicator on Child\'s profile shows full circle), you can delete the survey from the app.</string>
+
+    <string name="user_guide_header_6">Survey download</string>
+    <string name="user_guide_message_6">You can download deleted surveys from the server by pressing the download icon on the Child\'s profile page. Once the survey has downloaded, you can add new attempts or review it.</string>
+
+    <string name="user_guide_header_7">Change the language</string>
+    <string name="user_guide_message_7">To change the language, press the \"Menu\" icon located on the top right side of the main page. On the new page you will find the language selector (top right corner).  The app will be restarted to switch languages.</string>
+
+    <string name="user_guide_header_8">Security guidance</string>
+    <string name="user_guide_message_8">For security reason please follow the rules:
+        \n - Don\'t leave the tablet unattended.
+        \n - Don\'t pass your tablet to unfamiliar people.
+        \n - Never tell your password and username to someone. Even system\'s Super users don\'t need your password
+        \n - Report to your supervisor immediately if you have lost the device.
+    </string>
+
+    <!-- Card / Items -->
+    <string name="card_birth_date">Date of birth: %s</string>
+    <string name="card_state">State: %s</string>
+    <string name="card_birth_date_value">Date of birth</string>
+    <string name="card_gender_value">Gender</string>
+    <string name="card_state_value">State</string>
+    <string name="card_user_info_date">Date: %s</string>
+    <string name="survey_test_attempt_1">First attempt</string>
+    <string name="survey_test_attempt_2">Second attempt</string>
+    <string name="survey_test_attempt_3">Third attempt</string>
+    <string name="survey_test_time">Test time: %s</string>
+    <string name="survey_test_add">Make new attempt</string>
+    <string name="survey_test_interrupted">Aborted</string>
+
+    <!-- General -->
+    <string name="take_photo">Take a photo</string>
+
+    <!-- Notification -->
+    <string name="survey_upload_notification">Survey is being uploaded</string>
+    <string name="survey_download_notification">Survey is being downloaded</string>
+
+    <!-- Language -->
+    <string name="language_dialog_title">Language was changed</string>
+    <string name="language_dialog_message">For the changes to take effect, you must restart the application. Do you want to restart now?</string>
+
+    <!-- Admin page -->
+    <string name="admin_title">Administrator settings</string>
+    <string name="admin_server_hint">Server</string>
+</resources>

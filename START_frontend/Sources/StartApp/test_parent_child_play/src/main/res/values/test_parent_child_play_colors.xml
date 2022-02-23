@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="test_parent_child_play_color_main_view">#BB9AF4</color>
+    <color name="test_parent_child_play_color_background">#ffffff</color>
+    <color name="test_parent_child_play_color_background_general">#F4F4F4</color>
+    <color name="test_parent_child_play_color_text">#ffffff</color>
+    <color name="test_parent_child_play_color_text_general_textView">#7B7B7B</color>
+    <color name="test_parent_child_play_color_text_dialog_content">#AFAFAF</color>
+
+    <color name="testDialogTitleColor">#B199F1</color>
+    <color name="testDialogContentColor">#838383</color>
+</resources>

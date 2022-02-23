@@ -1,0 +1,84 @@
+apply plugin: 'com.android.library'
+apply plugin: 'realm-android'
+apply plugin: 'io.fabric'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.fabric.io/public' }
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 26
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    publishNonDefault true
+    flavorDimensions "default"
+
+    productFlavors {
+        internal {
+        }
+        prod {
+        }
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+    }
+}
+
+dependencies {
+    // Include libs folder
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    // Android libs
+    compileOnly 'com.android.support:appcompat-v7:26.1.0'
+    compileOnly 'com.android.support:support-v4:26.1.0'
+
+    // Crashlytics
+    compileOnly('com.crashlytics.sdk.android:crashlytics:2.6.7@aar') {
+        transitive = true
+    }
+
+    // Test Modules
+    compileOnly project(':tests')
+
+    // Retrofit
+    compileOnly 'com.squareup.retrofit2:retrofit:2.3.0'
+    compileOnly 'com.squareup.retrofit2:converter-gson:2.3.0'
+    compileOnly 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    compileOnly 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+    implementation 'com.android.support:support-annotations:27.0.2'
+}

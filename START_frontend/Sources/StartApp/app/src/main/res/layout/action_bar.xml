@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/actionbar_height"
+    android:background="@color/color_main_view"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_button"
+                android:layout_width="@dimen/actionbar_button_width"
+                android:layout_height="@dimen/actionbar_button_height"
+                android:layout_marginStart="@dimen/actionbar_button_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/actionbar_back_button"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/home_button"
+                android:layout_width="@dimen/actionbar_button_width"
+                android:layout_height="@dimen/actionbar_button_height"
+                android:layout_marginStart="@dimen/actionbar_button_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/actionbar_home_button"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/upload_button_all"
+                android:layout_width="@dimen/actionbar_button_width"
+                android:layout_height="@dimen/actionbar_button_height"
+                android:layout_marginEnd="@dimen/actionbar_button_margin"
+                android:layout_marginStart="@dimen/actionbar_button_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image_survey_upload"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_actionbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="@dimen/actionbar_button_padding"
+            android:textAlignment="center"
+            android:textColor="@color/color_text"
+            android:textSize="@dimen/text_size_action_bar"
+            android:visibility="visible" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkbox_skip"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="16dp"
+                android:button="@drawable/check_box"
+                android:gravity="center"
+                android:text="@string/parent_skip_step_text"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_size_general"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/language_button"
+                android:layout_width="@dimen/actionbar_button_width"
+                android:layout_height="@dimen/actionbar_button_height"
+                android:layout_marginEnd="@dimen/actionbar_button_margin"
+                android:textColor="@color/color_text"
+                android:textSize="@dimen/text_size_action_bar"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/delete_button"
+                android:layout_width="@dimen/actionbar_button_width"
+                android:layout_height="@dimen/actionbar_button_height"
+                android:layout_marginEnd="@dimen/actionbar_button_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image_survey_delete"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/upload_button"
+                android:layout_width="@dimen/actionbar_button_width"
+                android:layout_height="@dimen/actionbar_button_height"
+                android:layout_marginEnd="@dimen/actionbar_button_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/image_survey_upload"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/logout_button"
+                android:layout_width="@dimen/actionbar_button_width"
+                android:layout_height="@dimen/actionbar_button_height"
+                android:layout_marginEnd="@dimen/actionbar_button_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/actionbar_logout_button"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/navigation_button"
+                android:layout_width="@dimen/actionbar_button_width"
+                android:layout_height="@dimen/actionbar_button_height"
+                android:layout_marginEnd="@dimen/actionbar_button_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/actionbar_menu_button"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/save_button"
+                android:layout_width="@dimen/actionbar_button_width"
+                android:layout_height="@dimen/actionbar_button_height"
+                android:layout_marginEnd="@dimen/actionbar_button_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/actionbar_save_button"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/next_button"
+                android:layout_width="@dimen/actionbar_button_width"
+                android:layout_height="@dimen/actionbar_button_height"
+                android:layout_marginEnd="@dimen/actionbar_button_margin"
+                android:scaleType="fitCenter"
+                android:src="@drawable/actionbar_next_button"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

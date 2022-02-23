@@ -1,0 +1,355 @@
+<?php
+
+use tb\start_cms\CMS;
+use tb\start_cms\helpers\utils;
+use tb\start_cms\helpers\view;
+
+if (!defined('_VALID_PHP')) {die('Direct access to this location is not allowed.');}
+
+?>
+
+
+<?php
+
+// load resourses
+
+// load Bootstrap Datepicker
+view::appendCss(SITE.CMS_DIR.JS_DIR.'bootstrap-datepicker/css/bootstrap-datepicker3.css');
+view::appendJs(SITE.CMS_DIR.JS_DIR.'bootstrap-datepicker/js/bootstrap-datepicker.min.js');
+view::appendJs(SITE.CMS_DIR.JS_DIR.'bootstrap-datepicker/locales/bootstrap-datepicker.'.$_SESSION[CMS::$sess_hash]['ses_adm_lang'].'.min.js');
+
+?>
+
+
+<!-- Content Header (Page header) -->
+<section class="content-header">
+	<h1>
+		<?=CMS::t(($_SESSION[CMS::$sess_hash]['ses_adm_id']==$user['id'])? 'edit_cms_user_self': 'menu_item_cms_users_edit');?>
+		<small><?=utils::safeEcho(@$user['name'], 1);?></small>
+	</h1>
+
+	<div class="clearfix"></div>
+</section>
+
+
+<!-- Main content -->
+<section class="content">
+	<div class="row">
+		<div class="col-md-12">
+			<nav class="top-toolbar-stripe">
+				<a href="<?=utils::safeEcho($link_back, 1);?>" title="<?=CMS::t('back');?>" class="toolbar-btn-primary"><i class="fa fa-arrow-circle-o-left" aria-hidden="true"></i> Back</a>
+
+				<?=view::widget('breadcrumb', ['links' => [
+					/*[
+						'title' => 'Users dashboard',
+						'href' => '?controller=statistics&action=dashboard',
+						'icon' => 'users'
+					],*/ [
+						'title' => 'Exercises',
+						'href' => $link_back,
+						'icon' => 'picture-o'
+					], [
+						'title' => 'Edit Exercise',
+						'icon' => 'edit'
+					]
+				]]);?>
+			</nav>
+		</div>
+	</div>
+
+	<?php
+		if (!empty($op)) {
+			if ($op['success']) {
+				print view::notice($op['message'], 'success');
+			} else {
+				print view::notice(empty($op['errors'])? $op['message']: $op['errors']);
+			}
+		}
+	?>
+
+	<!-- Info boxes -->
+
+	<div class="box">
+		<form action="" method="post" enctype="multipart/form-data" class="form-std" autocomplete="off" role="form" id="formUserInfo">
+			<input type="hidden" name="CSRF_token" value="<?=$CSRF_token;?>" />
+
+			<div class="box-body">
+				<div class="row">
+					<div class="col-md-4">
+                        <div class="form-group">
+                            <label><?=CMS::t('image1');?></label>
+
+                            <?php if (!empty($exercise['img_1'])) {
+                                $uploadUrl = SITE.utils::dirCanonicalPath(CMS_DIR.UPLOADS_DIR);
+                                $previewUrl = $uploadUrl.'tests_content/'.$exercise['img_1'];
+                                $preview_exists = is_file(UPLOADS_DIR.'tests_content/'.$exercise['img_1']);
+                                //var_dump($preview_exists); die("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa");
+                                ?>
+                                <div class="image-preview">
+                                    <img style="height: 200px" src="<?=($preview_exists? $previewUrl: IMAGE_DIR.'noimg.jpg');?>" alt="<?=$exercise['img_1'];?>" class="img-responsive image-preview-img" />
+                                    <div class="image-preview-info">
+                                        <p>
+                                            <?php
+                                            $orgSize = utils::getFileSizeFormatted(UPLOADS_DIR.'tests_content/'.$exercise['img_1']);
+
+                                            $tmbSize = utils::getFileSizeFormatted(UPLOADS_DIR.'tests_content/'.$exercise['img_1']);
+                                            $imgModTimestamp = @filemtime(UPLOADS_DIR.'tests_content/'.$exercise['img_1']);
+                                            ?>
+
+                                            <?php //echo CMS::t('article_image_original_upload_datetime');?> <?php //echo ($imgModTimestamp? date('d.m.Y', $imgModTimestamp): '-');?><br />
+                                            <br />
+                                            <br />
+
+
+                                    </div>
+                                </div>
+                            <?php } ?>
+
+                            <?=view::browse([
+                                'name' => 'img_1',
+                                'accept' => 'image/*'
+                            ]);?>
+							<p><strong>Filename: </strong><?php echo basename(UPLOADS_DIR.'tests_content/'.$exercise['img_1'])?></p>
+							<p><strong>Uploaded: </strong><?php echo date('m.d.y', filemtime(UPLOADS_DIR.'tests_content/'.$exercise['img_1']))?></p>
+                            <p class="form-info-tip"><?=CMS::t('article_image_descr', [
+                                    '{types}' => implode(', ', $allowed_thumb_ext)
+                                ]);?></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label><?=CMS::t('image2');?></label>
+
+                            <?php if (!empty($exercise['img_2'])) {
+                                $uploadUrl = SITE.utils::dirCanonicalPath(CMS_DIR.UPLOADS_DIR);
+                                $previewUrl = $uploadUrl.'tests_content/'.$exercise['img_2'];
+                                $preview_exists = is_file(UPLOADS_DIR.'tests_content/'.$exercise['img_2']);
+                                //var_dump($preview_exists); die("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa");
+                                ?>
+                                <div class="image-preview">
+                                    <img style="height: 200px" src="<?=($preview_exists? $previewUrl: IMAGE_DIR.'noimg.jpg');?>" alt="<?=$exercise['img_2'];?>" class="img-responsive image-preview-img" />
+                                    <div class="image-preview-info">
+                                        <p>
+                                            <?php
+                                            $orgSize = utils::getFileSizeFormatted(UPLOADS_DIR.'tests_content/'.$exercise['img_2']);
+
+                                            $tmbSize = utils::getFileSizeFormatted(UPLOADS_DIR.'tests_content/'.$exercise['img_2']);
+                                            $imgModTimestamp = @filemtime(UPLOADS_DIR.'tests_content/'.$exercise['img_2']);
+                                            ?>
+
+                                            <?php //echo CMS::t('article_image_original_upload_datetime');?> <?php //echo ($imgModTimestamp? date('d.m.Y', $imgModTimestamp): '-');?><br />
+                                            <br />
+                                            <br />
+
+
+                                    </div>
+                                </div>
+                            <?php } ?>
+
+                            <?=view::browse([
+                                'name' => 'img_2',
+                                'accept' => 'image/*'
+                            ]);?>
+							<p><strong>Filename: </strong><?php echo basename(UPLOADS_DIR.'tests_content/'.$exercise['img_2'])?></p>
+							<p><strong>Uploaded: </strong><?php echo date('m.d.y', filemtime(UPLOADS_DIR.'tests_content/'.$exercise['img_2']))?></p>
+                            <p class="form-info-tip"><?=CMS::t('article_image_descr', [
+                                    '{types}' => implode(', ', $allowed_thumb_ext)
+                                ]);?></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label><?=CMS::t('image3');?></label>
+
+                            <?php if (!empty($exercise['img_3'])) {
+                                $uploadUrl = SITE.utils::dirCanonicalPath(CMS_DIR.UPLOADS_DIR);
+                                $previewUrl = $uploadUrl.'tests_content/'.$exercise['img_3'];
+                                $preview_exists = is_file(UPLOADS_DIR.'tests_content/'.$exercise['img_3']);
+                                //var_dump($preview_exists); die("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa");
+                                ?>
+                                <div class="image-preview">
+                                    <img style="height: 200px" src="<?=($preview_exists? $previewUrl: IMAGE_DIR.'noimg.jpg');?>" alt="<?=$exercise['img_3'];?>" class="img-responsive image-preview-img" />
+                                    <div class="image-preview-info">
+                                        <p>
+                                            <?php
+                                            $orgSize = utils::getFileSizeFormatted(UPLOADS_DIR.'tests_content/'.$exercise['img_3']);
+
+                                            $tmbSize = utils::getFileSizeFormatted(UPLOADS_DIR.'tests_content/'.$exercise['img_3']);
+                                            $imgModTimestamp = @filemtime(UPLOADS_DIR.'tests_content/'.$exercise['img_3']);
+                                            ?>
+
+                                            <?php //CMS::t('article_image_original_upload_datetime');?> <?php //($imgModTimestamp? date('d.m.Y', $imgModTimestamp): '-');?><br />
+                                            <br />
+                                            <br />
+
+
+                                    </div>
+                                </div>
+                            <?php } ?>
+
+                            <?=view::browse([
+                                'name' => 'img_3',
+                                'accept' => 'image/*'
+                            ]);?>
+								<p><strong>Filename: </strong><?php echo basename(UPLOADS_DIR.'tests_content/'.$exercise['img_3'])?></p>
+								<p><strong>Uploaded: </strong><?php echo date('m.d.y', filemtime(UPLOADS_DIR.'tests_content/'.$exercise['img_3']))?></p>
+                            <p class="form-info-tip"><?=CMS::t('article_image_descr', [
+                                    '{types}' => implode(', ', $allowed_thumb_ext)
+                                ]);?></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label><?=CMS::t('image4');?></label>
+
+                            <?php if (!empty($exercise['img_4'])) {
+                                $uploadUrl = SITE.utils::dirCanonicalPath(CMS_DIR.UPLOADS_DIR);
+                                $previewUrl = $uploadUrl.'tests_content/'.$exercise['img_4'];
+                                $preview_exists = is_file(UPLOADS_DIR.'tests_content/'.$exercise['img_4']);
+                                //var_dump($preview_exists); die("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa");
+                                ?>
+                                <div class="image-preview">
+                                    <img style="height: 200px" src="<?=($preview_exists? $previewUrl: IMAGE_DIR.'noimg.jpg');?>" alt="<?=$exercise['img_4'];?>" class="img-responsive image-preview-img" />
+                                    <div class="image-preview-info">
+                                        <p>
+                                            <?php
+                                            $orgSize = utils::getFileSizeFormatted(UPLOADS_DIR.'tests_content/'.$exercise['img_4']);
+
+                                            $tmbSize = utils::getFileSizeFormatted(UPLOADS_DIR.'tests_content/'.$exercise['img_4']);
+                                            $imgModTimestamp = @filemtime(UPLOADS_DIR.'tests_content/'.$exercise['img_4']);
+                                            ?>
+
+                                            <?php //echo CMS::t('article_image_original_upload_datetime');?> <?php //($imgModTimestamp? date('d.m.Y', $imgModTimestamp): '-');?><br />
+                                            <br />
+                                            <br />
+
+
+                                    </div>
+                                </div>
+                            <?php } ?>
+
+                            <?=view::browse([
+                                'name' => 'img_4',
+                                'accept' => 'image/*'
+                            ]);?>
+								<p><strong>Filename: </strong><?php echo basename(UPLOADS_DIR.'tests_content/'.$exercise['img_4'])?></p>
+								<p><strong>Uploaded: </strong><?php echo date('m.d.y', filemtime(UPLOADS_DIR.'tests_content/'.$exercise['img_4']))?></p>
+                            <p class="form-info-tip"><?=CMS::t('article_image_descr', [
+                                    '{types}' => implode(', ', $allowed_thumb_ext)
+                                ]);?></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label><?=CMS::t('image5');?></label>
+
+                            <?php if (!empty($exercise['img_5'])) {
+                                $uploadUrl = SITE.utils::dirCanonicalPath(CMS_DIR.UPLOADS_DIR);
+                                $previewUrl = $uploadUrl.'tests_content/'.$exercise['img_5'];
+                                $preview_exists = is_file(UPLOADS_DIR.'tests_content/'.$exercise['img_5']);
+                                //var_dump($preview_exists); die("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa");
+                                ?>
+                                <div class="image-preview">
+                                    <img style="height: 200px" src="<?=($preview_exists? $previewUrl: IMAGE_DIR.'noimg.jpg');?>" alt="<?=$exercise['img_5'];?>" class="img-responsive image-preview-img" />
+                                    <div class="image-preview-info">
+                                        <p>
+                                            <?php
+                                            $orgSize = utils::getFileSizeFormatted(UPLOADS_DIR.'tests_content/'.$exercise['img_5']);
+
+                                            $tmbSize = utils::getFileSizeFormatted(UPLOADS_DIR.'tests_content/'.$exercise['img_5']);
+                                            $imgModTimestamp = @filemtime(UPLOADS_DIR.'tests_content/'.$exercise['img_5']);
+                                            ?>
+
+                                            <?php // echo CMS::t('article_image_original_upload_datetime');?> <?php //($imgModTimestamp? date('d.m.Y', $imgModTimestamp): '-');?><br />
+                                            <br />
+                                            <br />
+
+
+                                    </div>
+                                </div>
+                            <?php } ?>
+
+                            <?=view::browse([
+                                'name' => 'img_5',
+                                'accept' => 'image/*'
+                            ]);?>
+								<p><strong>Filename: </strong><?php echo basename(UPLOADS_DIR.'tests_content/'.$exercise['img_5'])?></p>
+								<p><strong>Uploaded: </strong><?php echo date('m.d.y', filemtime(UPLOADS_DIR.'tests_content/'.$exercise['img_5']))?></p>
+                            <p class="form-info-tip"><?=CMS::t('article_image_descr', [
+                                    '{types}' => implode(', ', $allowed_thumb_ext)
+                                ]);?></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label><?=CMS::t('image6');?></label>
+
+                            <?php if (!empty($exercise['img_6'])) {
+                                $uploadUrl = SITE.utils::dirCanonicalPath(CMS_DIR.UPLOADS_DIR);
+                                $previewUrl = $uploadUrl.'tests_content/'.$exercise['img_6'];
+                                $preview_exists = is_file(UPLOADS_DIR.'tests_content/'.$exercise['img_6']);
+                                //var_dump($preview_exists); die("AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAa");
+                                ?>
+                                <div class="image-preview">
+                                    <img style="height: 200px" src="<?=($preview_exists? $previewUrl: IMAGE_DIR.'noimg.jpg');?>" alt="<?=$exercise['img_6'];?>" class="img-responsive image-preview-img" />
+                                    <div class="image-preview-info">
+                                        <p>
+                                            <?php
+                                            $orgSize = utils::getFileSizeFormatted(UPLOADS_DIR.'tests_content/'.$exercise['img_6']);
+
+                                            $tmbSize = utils::getFileSizeFormatted(UPLOADS_DIR.'tests_content/'.$exercise['img_6']);
+                                            $imgModTimestamp = @filemtime(UPLOADS_DIR.'tests_content/'.$exercise['img_6']);
+                                            ?>
+
+                                            <?php //echo CMS::t('article_image_original_upload_datetime');?> <?php //($imgModTimestamp? date('d.m.Y', $imgModTimestamp): '-');?><br />
+                                            <br />
+                                            <br />
+
+
+                                    </div>
+                                </div>
+                            <?php } ?>
+
+                            <?=view::browse([
+                                'name' => 'img_6',
+                                'accept' => 'image/*'
+                            ]);?>
+								<p><strong>Filename: </strong><?php echo basename(UPLOADS_DIR.'tests_content/'.$exercise['img_6'])?></p>
+								<p><strong>Uploaded: </strong><?php echo date('m.d.y', filemtime(UPLOADS_DIR.'tests_content/'.$exercise['img_6']))?></p>
+                            <p class="form-info-tip"><?=CMS::t('article_image_descr', [
+                                    '{types}' => implode(', ', $allowed_thumb_ext)
+                                ]);?></p>
+                        </div>
+                    </div>
+                    <!--<div class="col-md-6 col-md-offset-3">
+                        <div class="form-group">
+                            <label><?/*=CMS::t('name');*/?></label>
+
+                            <input type="text" name="name" value="<?/*=utils::safePostValue('name', $exercise['name'], 1);*/?>" placeholder="<?/*=CMS::t('article_source_url');*/?>" class="form-control" style="margin-bottom: 5px;" />
+
+                        </div>
+                    </div>-->
+
+
+
+
+						<input type="hidden" name="lang" value="<?=$user['lang'];?>" />
+
+
+
+				</div>
+			</div>
+			<!-- /.box-body -->
+
+			<div class="box-footer">
+				<button type="submit" name="save" value="1" class="btn btn-primary"><i class="fa fa-save" aria-hidden="true"></i> <?=CMS::t('save');?></button>
+				<button type="submit" name="apply" value="1" class="btn btn-primary"><i class="fa fa-check" aria-hidden="true"></i> <?=CMS::t('apply');?></button>
+				<button type="reset" name="reset" value="1" class="btn btn-default"><i class="fa fa-refresh" aria-hidden="true"></i> <?=CMS::t('reset');?></button>
+			</div>
+		</form>
+	</div>
+	<!-- /.box -->
+
+	<!-- /.info boxes -->
+</section>
+<!-- /.content -->

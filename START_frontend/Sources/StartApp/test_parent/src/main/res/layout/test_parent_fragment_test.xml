@@ -1,0 +1,65 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <RelativeLayout xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.reading.start.tests.test_parent.ui.fragments.ParentTestFragment">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/action_bar"
+                layout="@layout/test_parent_action_bar" />
+
+            <RadioGroup
+                android:id="@+id/parent_selector"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="24dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/parent_1"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radio_button_background_menu_left"
+                    android:button="@null"
+                    android:checked="true"
+                    android:gravity="center"
+                    android:textColor="@drawable/radio_button_text_menu"
+                    android:textSize="@dimen/test_parent_text_size_general" />
+
+                <RadioButton
+                    android:id="@+id/parent_2"
+                    android:layout_width="180dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radio_button_background_menu_right"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:textColor="@drawable/radio_button_text_menu"
+                    android:textSize="@dimen/test_parent_text_size_general" />
+            </RadioGroup>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/test_parent_training_recycler_view_margin_bottom"
+                android:layout_marginEnd="@dimen/test_parent_training_recycler_view_margin_end"
+                android:layout_marginStart="@dimen/test_parent_training_recycler_view_margin_start"
+                android:layout_weight="1"
+                android:scrollbars="horizontal" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,23 @@
+<resources>
+
+    <!-- General -->
+    <string name="test_jabble_name">बुलबुले फोड़ने की गेम </string>
+    <string name="test_jabble_action_bar_text_default">बुलबुले फोड़ने की गेम दिखाएँ </string>
+    <string name="test_jabble_result_popped_count">फोड़े गए बुलबुलों की संख्या: %s</string>
+    <string name="test_jabble_result_total_count">कुकुल बुलबुले: %s</string>
+    <string name="test_jabble_title">बुलबुले फोड़ने की गेम </string>
+    <string name="test_jabble_instruction">बुलबुले फोड़ने के लिए उनपर ऊँगली से दबाएं और बच्चे को दिखाएँ | जब बच्चा गेम को समझ जाए तो दायीं  ओर बने बटन को दबा कर गेम शुरू करें</string>
+    <string name="test_jabble_instruction_fingers_error">कृपया गेम खेलने के लिए सिर्फ एक ऊँगली का इस्तेमाल करें</string>
+
+    <!-- Test Result -->
+    <string name="test_jabble_instruction_text">निर्देश</string>
+    <string name="test_jabble_action_bar_test_result">टेस्ट के परिणाम</string>
+    <string name="test_jabble_result">Popped = %1$s \n Total = %2$s</string>
+
+    <!-- Dialogs -->
+    <string name="test_jabble_dialog_success_title">यह गेम पूरी हो गयी है </string>
+    <string name="test_jabble_dialog_success_message">क्या आप वापिस जाना चाहते हैं ? एक नयी कोशिश करें या नयी गेम शुरू करें</string>
+    <string name="test_jabble_dialog_interrupted_title">गेम को बीच में रोका गया था</string>
+    <string name="test_jabble_dialog_interrupted_message">क्या आप वापिस जाना चाहते हैं ? एक नयी कोशिश करें या नयी गेम शुरू करें </string>
+
+</resources>

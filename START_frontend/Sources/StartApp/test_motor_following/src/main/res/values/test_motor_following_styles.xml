@@ -1,0 +1,24 @@
+<resources>
+
+    <style name="test_motor_following_ButtonGeneral">
+        <item name="android:textColor">@color/test_motor_following_color_text</item>
+        <item name="android:textSize">@dimen/test_motor_following_button_general_text_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">@dimen/test_motor_following_button_general_width</item>
+        <item name="android:layout_height">@dimen/test_motor_following_button_general_height</item>
+        <item name="android:background">@drawable/button_play</item>
+    </style>
+
+    <style name="test_motor_following_TextViewGeneral">
+        <item name="android:textSize">@dimen/test_motor_following_text_size_general</item>
+        <item name="android:textColor">@color/test_motor_following_color_text_general_textView
+        </item>
+    </style>
+
+    <declare-styleable name="CirclePageIndicator">
+        <attr name="indicator_spacing" format="dimension" />
+    </declare-styleable>
+
+    <style name="ProgressBarStyle" parent="@android:style/Widget.ProgressBar.Inverse" />
+
+</resources>

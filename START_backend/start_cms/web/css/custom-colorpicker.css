@@ -1,0 +1,7 @@
+.colorpicker-element .input-group-addon i, .colorpicker-element .add-on i {
+	width: 24px !important;
+}
+
+.colorpicker-selectors i {
+	width: 24px; height: 16px; margin: 1px 3px 4px 3px;
+}

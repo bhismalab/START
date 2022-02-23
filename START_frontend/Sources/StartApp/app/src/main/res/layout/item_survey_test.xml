@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/survey_test_attempt_card_width"
+    android:layout_height="@dimen/survey_test_attempt_card_height"
+    android:layout_gravity="center"
+    android:background="@drawable/my_survey_item_background"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/attempt_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingTop="@dimen/survey_adapter_item_padding_top"
+        android:textColor="@color/color_text_general_textView"
+        android:textSize="@dimen/text_size_survey_adapter_item" />
+
+    <TextView
+        android:id="@+id/result_textView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingTop="@dimen/survey_adapter_item_text_padding"
+        android:textColor="@color/color_text_general_textView"
+        android:textSize="@dimen/text_size_survey_adapter_item" />
+
+    <LinearLayout
+        android:id="@+id/play_button_holder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/play_button"
+            android:layout_width="@dimen/actionbar_button_width"
+            android:layout_height="@dimen/actionbar_button_height"
+            android:layout_gravity="center"
+            android:src="@drawable/button_eye"
+            android:scaleType="fitCenter"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/interrupted_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/survey_adapter_item_text_padding"
+        android:text="@string/survey_test_interrupted"
+        android:textColor="@color/color_text_general_textView"
+        android:textSize="@dimen/text_size_survey_adapter_item" />
+
+    <TextView
+        android:id="@+id/time_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/survey_adapter_item_text_padding"
+        android:text="@string/survey_test_time"
+        android:textColor="@color/color_text_general_textView"
+        android:textSize="@dimen/text_size_survey_adapter_item" />
+</LinearLayout>

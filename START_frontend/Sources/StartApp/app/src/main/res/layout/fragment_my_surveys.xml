@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/action_bar"
+            layout="@layout/action_bar" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/my_survey_recycler_view_margin_top"
+            android:layout_marginEnd="@dimen/my_survey_recycler_view_margin_end"
+            android:layout_marginStart="@dimen/my_survey_recycler_view_margin_start"
+            android:layout_marginTop="@dimen/my_survey_recycler_view_margin_top"
+            android:layout_weight="1"
+            android:scrollbars="horizontal" />
+
+    </LinearLayout>
+</layout>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<resources>
+    <string name="sdk_test_instruction">Please place the device at the distance of 30-50 cm from your face. Direct your gaze (eyes) to the centre of the screen and keep your head in a natural position. Your head should be pointed to the centre of the screen. Use the window below to check your head\'s position.</string>
+    <string name="sdk_test_device_position">Device position:</string>
+    <string name="sdk_test_ok">OK</string>
+    <string name="sdk_test_fail">Fail</string>
+    <string name="sdk_test_device_shake">Device jolting:</string>
+    <string name="sdk_test_light_of_environment">Ambient lighting:</string>
+    <string name="sdk_test_light_of_camera">Camera illumination:</string>
+    <string name="sdk_test_head_detect">Head detection:</string>
+    <string name="sdk_test_head_distance">Distance:</string>
+    <string name="sdk_test_eye_detect">Eye detection:</string>
+    <string name="sdk_test_button_start_test">Start test</string>
+    <string name="sdk_test_calibration">Please look at the centre of the screen</string>
+    <string name="sdk_test_button_stop_test">Stop test</string>
+    <string name="sdk_test_fail_message_device_position">Wrong device position! Please place the device on a flat and stable surface.</string>
+    <string name="sdk_test_fail_message_device_shake">Device is not stable. The device must be placed on a flat surface and shouldn\'t be moved during the test.</string>
+    <string name="sdk_test_fail_message_light">Insufficient ambient lighting! Please change your position or improve ambient lighting.</string>
+    <string name="sdk_test_fail_message_light_camera">There is too much light pointed at the camera. Please change your position or adjust  ambient lighting.</string>
+    <string name="sdk_test_fail_message_head_detect">Cannot detect the face. Please sit closer or check ambient lighting.</string>
+    <string name="sdk_test_fail_message_head_far">The face is too far from the screen. Please place the device at a distance 30-50 cm from your face.</string>
+    <string name="sdk_test_fail_message_head_close">The face is too close to the screen. Please place the device at a distance 30 - 50 cm from your face.</string>
+    <string name="sdk_test_fail_message_eye_detect">Cannot detect eye. Please sit closer or check ambient lighting.</string>
+    <string name="sdk_test_calibration_not_success">Calibration was not successful. Please do not move your head and try again.</string>
+</resources>

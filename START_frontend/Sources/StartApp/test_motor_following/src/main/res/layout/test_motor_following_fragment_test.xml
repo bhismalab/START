@@ -1,0 +1,23 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bee_background">
+
+        <com.reading.start.tests.test_motor_following.ui.views.MotorFollowingView
+            android:id="@+id/motor_following_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.reading.start.tests.test_motor_following.ui.views.CompleteTriggerView
+            android:id="@+id/completeTriggerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true" />
+
+    </RelativeLayout>
+
+</layout>

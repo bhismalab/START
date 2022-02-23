@@ -1,0 +1,18 @@
+<resources>
+
+    <style name="test_choice_touching_ButtonGeneral">
+        <item name="android:textColor">@color/test_choice_touching_color_text</item>
+        <item name="android:textSize">@dimen/test_choice_touching_button_general_text_size</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">@dimen/test_choice_touching_button_general_width</item>
+        <item name="android:layout_height">@dimen/test_choice_touching_button_general_height</item>
+        <item name="android:background">@drawable/button_play</item>
+    </style>
+
+    <style name="test_choice_touching_TextViewGeneral">
+        <item name="android:textSize">@dimen/test_choice_touching_text_size_general</item>
+        <item name="android:textColor">@color/test_choice_touching_color_text_general_textView
+        </item>
+    </style>
+
+</resources>

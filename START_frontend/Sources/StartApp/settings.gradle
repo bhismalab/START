@@ -1,0 +1,12 @@
+include ':app',
+        ':tests',
+        ':openCVLibrary320',
+        ':sdk_eye_tracking',
+        ':test_eye_tracking',
+        ':test_wheel',
+        ':test_coloring',
+        ':test_choice_touching',
+        ':test_jabble',
+        ':test_motor_following',
+        ':test_parent',
+        ':test_parent_child_play'

@@ -1,0 +1,68 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/action_bar"
+                layout="@layout/test_choice_touching_action_bar" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="@dimen/test_choice_touching_training_coloring_layout_margin"
+                android:layout_weight="1"
+                android:background="@drawable/card_background_border"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="@dimen/test_choice_touching_circle_size"
+                        android:layout_height="@dimen/test_choice_touching_circle_size"
+                        android:layout_margin="50dp"
+                        android:background="@drawable/test_choice_touching_color_left">
+
+                        <TextView
+                            android:id="@+id/left_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/test_choice_touching_color_text"
+                            android:textSize="50sp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="400dp"
+                        android:layout_height="400dp"
+                        android:layout_margin="50dp"
+                        android:background="@drawable/test_choice_touching_color_right">
+
+                        <TextView
+                            android:id="@+id/right_count"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:textColor="@color/test_choice_touching_color_text"
+                            android:textSize="50sp" />
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</layout>

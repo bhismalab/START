@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#252d3a</color>
+
+    <color name="color_background">#F4F4F4</color>
+
+    <color name="color_text">#ffffff</color>
+    <color name="color_text_dark">#7B7B7B</color>
+    <color name="color_text_main">#B199F1</color>
+    <color name="color_main_view">#BB9AF4</color>
+
+    <color name="color_text_general_textView">#7B7B7B</color>
+    <color name="color_text_dialog_content">#AFAFAF</color>
+    <color name="color_text_dialog_title">#252d3a</color>
+
+    <color name="color_photo_border">#8FE1E1E1</color>
+    <color name="color_radio_dark">#7B7B7B</color>
+    <color name="color_grey_light">#C1C1C1</color>
+    <color name="color_hint">#C1C1C1</color>
+
+    <color name="popup_divider_color">#B4B4B4</color>
+
+    <color name="round_progress_unfinished_color">#C1C1C1</color>
+    <color name="round_progress_finished_color">#B199F1</color>
+    <color name="round_progress_upload_color">#81D657</color>
+</resources>

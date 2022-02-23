@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/photo_holder"
+                android:layout_width="200dp"
+                android:layout_height="200dp">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_centerInParent="true"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/image_profile_photo_empty"
+                    app:riv_border_color="@color/color_photo_border"
+                    app:riv_border_width="0dp"
+                    app:riv_corner_radius="@dimen/child_card_image_round_radius_large"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="false"
+                    app:riv_tile_mode="clamp" />
+
+                <ImageView
+                    android:id="@+id/edit_button"
+                    android:layout_width="@dimen/actionbar_button_width"
+                    android:layout_height="@dimen/actionbar_button_height"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="@dimen/actionbar_button_margin"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/actionbar_edit_button"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="16dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:maxLines="1"
+                android:paddingBottom="@dimen/child_information_text_view_padding_bottom"
+                android:singleLine="true"
+                android:textColor="@color/color_text_dark"
+                android:textSize="@dimen/text_size_card_child_information_title"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/child_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textColor="@color/color_text_general_textView"
+                android:textSize="@dimen/text_size_card_child_information" />
+
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

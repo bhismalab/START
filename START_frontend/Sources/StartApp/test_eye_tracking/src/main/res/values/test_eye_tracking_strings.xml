@@ -1,0 +1,28 @@
+<resources>
+    <!-- General -->
+    <string name="test_eye_tracking_name">Eye tracking test</string>
+    <string name="test_eye_tracking_status_ok">Press the button to start calibration</string>
+
+    <!-- Test Result -->
+    <string name="test_eye_tracking_assessment_actionbar_1">Eye tracking test 1</string>
+    <string name="test_eye_tracking_assessment_actionbar_2">Eye tracking test 2</string>
+    <string name="test_eye_tracking_attention_actionbar">Attention disengagement test</string>
+    <string name="test_eye_tracking_action_bar_test_result_1">Eye tracking test result: first attempt</string>
+    <string name="test_eye_tracking_action_bar_test_result_2">Eye tracking test result: second attempt</string>
+    <string name="test_eye_tracking_action_bar_test_result_3">Eye tracking test result: third attempt</string>
+    <string name="test_eye_tracking_result">Gaze detection = %1$s\nOn the screen = %2$s</string>
+
+    <!-- Dialogs -->
+    <string name="test_eye_tracking_dialog_success_title">Test Completed</string>
+    <string name="test_eye_tracking_dialog_success_message">Do you want to go back, make a new attempt, or start the next test?</string>
+    <string name="test_eye_tracking_dialog_interrupted_title">Test was aborted</string>
+    <string name="test_eye_tracking_dialog_interrupted_message">Do you want to go back, make a new attempt, or start the next test?</string>
+
+    <!-- Upload -->
+    <string name="test_eye_tracking_upload_error_looking_test_upload">Looking test not uploaded.</string>
+    <string name="test_eye_tracking_upload_error_looking_test_processed">Looking test processing was fail.</string>
+    <string name="test_eye_tracking_upload_error_attention_test_upload">Attention test not uploaded.</string>
+    <string name="test_eye_tracking_upload_error_attention_test_processed">Attention test processing was fail.</string>
+    <string name="test_eye_tracking_upload_error">An error occurred while uploading Eye-Tracking test</string>
+
+</resources>

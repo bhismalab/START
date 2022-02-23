@@ -1,0 +1,29 @@
+<resources>
+
+    <!-- General -->
+    <string name="test_parent_name">Questionnaire</string>
+    <string name="test_parent_actionbar_text_default">Questionnaire</string>
+
+    <!-- Test instructions -->
+    <string name="test_parent_actionbar_parent_assessment">Parent assessment</string>
+    <string name="test_parent_action_bar_test_result">Questionnaire video</string>
+    <string name="test_parent_result">Answered = %1$s \n Total = %2$s</string>
+
+    <!-- Test parent training -->
+    <string name="test_parent_card_question_button_always">Always</string>
+    <string name="test_parent_card_question_button_sometimes">Sometimes</string>
+    <string name="test_parent_card_question_button_rarely">Rarely</string>
+    <string name="test_parent_card_question_button_never">Never</string>
+    <string name="test_parent_card_question_button_video1">Video 1</string>
+    <string name="test_parent_card_question_button_video2">Video 2</string>
+
+    <!-- Dialogs -->
+    <string name="test_paren_dialog_success_title">Test Completed</string>
+    <string name="test_paren_dialog_success_message">Do you want to save your data and go to the next game? Please remember you will not be able to edit them later and will not have a second chance to do the questionnaire.</string>
+    <string name="test_paren_dialog_interrupted_title">Test was aborted</string>
+    <string name="test_paren_dialog_interrupted_message">Do you want to go back or start the next test?</string>
+
+    <!-- Upload -->
+    <string name="test_paren_following_upload_error">An error occurred while uploading Questionnaire test</string>
+
+</resources>

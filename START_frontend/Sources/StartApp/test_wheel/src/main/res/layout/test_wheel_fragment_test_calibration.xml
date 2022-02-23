@@ -1,0 +1,74 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/settings_screen"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#ffffff"
+            android:orientation="vertical">
+
+            <include
+                android:id="@+id/action_bar"
+                layout="@layout/test_wheel_action_bar" />
+
+            <RelativeLayout
+                android:layout_width="625dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:background="#000000"
+                android:gravity="center_horizontal">
+
+                <com.reading.start.sdk.ui.view.CameraDetectView
+                    android:id="@+id/fd_activity_surface_view"
+                    android:layout_width="625dp"
+                    android:layout_height="500dp"
+                    android:layout_centerInParent="true" />
+
+                <com.reading.start.sdk.ui.view.AutoFitTextureView
+                    android:id="@+id/texture"
+                    android:layout_width="625dp"
+                    android:layout_height="500dp"
+                    android:layout_centerInParent="true"
+                    android:visibility="visible" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="80dp"
+                    android:layout_height="80dp" />
+
+                <TextView
+                    android:id="@+id/status"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/test_wheel_instruction_calibration"
+                    android:textSize="@dimen/default_text_size" />
+
+                <ImageButton
+                    android:id="@+id/start_test"
+                    style="@style/test_wheel_ButtonGeneral"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

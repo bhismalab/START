@@ -1,0 +1,72 @@
+
+.each_block {
+    float: left;
+}
+ul.content-box-tabs {
+	float: none;
+}
+.tab-content {
+	display: block;
+}
+.tab-content table tr td {
+	padding: 5px !important;
+}
+.gallery-photos-list {
+	display: block;
+	position: relative;
+	padding: 0 10px;
+}
+.item {
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	background: #fff !important;
+	padding: 5px !important;
+	margin: 6px 4px;
+	line-height: 20px;
+  	cursor: move;
+    /*display: inline-block !important;*/
+	float: left;
+	list-style-type: none;
+}
+.ui-sortable-helper {
+	box-shadow: 0 3px 8px;
+	opacity: 0.9;
+}
+.place-holder {
+	width: 254px;
+	height: 247px;
+	border: 1px solid #fc0;
+	border-radius: 5px;
+	margin: 6px 4px;
+	float: left;
+	list-style-type: none;
+}
+.ui-sortable-placeholder{
+	float: left;
+}
+.red {
+	border: 1px solid #b0001d !important;
+	background-color: #ffc4ce !important;
+}
+.tab-red {
+	font-weight: bold;
+	color: #c00 !important;
+	background: #fee;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+[draggable] {
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  /* Required to make elements draggable in old WebKit */
+  -khtml-user-drag: element;
+  -webkit-user-drag: element;
+}
+.seans {
+	width: 20px;
+	text-align: center;
+	vertical-align: top;
+	font-weight: bold;
+}

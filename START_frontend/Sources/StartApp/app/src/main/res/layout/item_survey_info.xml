@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginBottom="@dimen/child_card_layout_margin_bottom"
+        android:layout_marginEnd="@dimen/child_card_layout_margin_end"
+        android:layout_marginStart="@dimen/child_card_layout_margin_start"
+        android:background="@drawable/my_survey_item_background"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/survey_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:maxLines="1"
+            android:text="@string/survey_name"
+            android:textColor="@color/color_text_main"
+            android:textSize="20dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="3dp">
+
+            <RelativeLayout
+                android:id="@+id/progress_holder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <com.reading.start.presentation.ui.views.CircularProgressBar
+                    android:id="@+id/survey_progress"
+                    android:layout_width="@dimen/progress_size_small"
+                    android:layout_height="@dimen/progress_size_small"
+                    android:layout_centerInParent="true"
+                    app:cpb_background_progressbar_color="@color/round_progress_unfinished_color"
+                    app:cpb_background_progressbar_width="@dimen/circle_progress_default_stroke_width"
+                    app:cpb_progressbar_color="@color/round_progress_finished_color"
+                    app:cpb_progressbar_width="@dimen/circle_progress_default_stroke_width" />
+
+                <com.reading.start.presentation.ui.views.CircularProgressBar
+                    android:id="@+id/upload_progress"
+                    android:layout_width="@dimen/progress_size_big"
+                    android:layout_height="@dimen/progress_size_big"
+                    android:layout_centerInParent="true"
+                    app:cpb_background_progressbar_color="@color/round_progress_unfinished_color"
+                    app:cpb_background_progressbar_width="@dimen/circle_progress_default_stroke_width"
+                    app:cpb_progressbar_color="@color/round_progress_upload_color"
+                    app:cpb_progressbar_width="@dimen/circle_progress_default_stroke_width" />
+
+                <ImageView
+                    android:id="@+id/survey"
+                    android:layout_width="@dimen/survey_icon_size"
+                    android:layout_height="@dimen/survey_icon_size"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/dialog_button_assessments_normal" />
+
+                <ImageView
+                    android:id="@+id/download"
+                    android:layout_width="@dimen/survey_icon_size"
+                    android:layout_height="@dimen/survey_icon_size"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/image_survey_download"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/upload_status"
+                    android:layout_width="@dimen/child_information_status_size"
+                    android:layout_height="@dimen/child_information_status_size"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/image_upload_cloud_no" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

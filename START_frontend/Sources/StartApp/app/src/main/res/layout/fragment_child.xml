@@ -1,0 +1,201 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data></data>
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.reading.start.presentation.ui.fragments.child.ChildFragment">
+
+        <include
+            android:id="@+id/action_bar"
+            layout="@layout/action_bar" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:weightSum="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/child_information_card_information_layout_margin_bottom"
+                    android:layout_marginEnd="@dimen/child_information_card_information_layout_margin_end"
+                    android:layout_marginStart="@dimen/child_information_card_information_layout_margin_start"
+                    android:layout_marginTop="@dimen/child_information_card_information_layout_margin_top"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/layout_photo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/child_layout_photo_margin_end"
+                        android:orientation="vertical">
+
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+
+                            <com.makeramen.roundedimageview.RoundedImageView
+                                android:id="@+id/child_photo"
+                                android:layout_width="200dp"
+                                android:layout_height="200dp"
+                                android:layout_centerInParent="true"
+                                android:scaleType="fitCenter"
+                                android:src="@drawable/image_profile_photo_empty"
+                                app:riv_border_color="@color/color_photo_border"
+                                app:riv_border_width="0dp"
+                                app:riv_corner_radius="@dimen/child_card_image_round_radius_large"
+                                app:riv_mutate_background="true"
+                                app:riv_oval="false"
+                                app:riv_tile_mode="clamp" />
+                        </FrameLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/button_diagnosis"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerInParent="true"
+                                android:layout_gravity="center"
+                                android:layout_marginBottom="@dimen/view_margin_default"
+                                android:gravity="center"
+                                android:src="@drawable/image_child_diagnosis" />
+
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layout_info"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/child_name"
+                            style="@style/EditTextGeneralDivided"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/view_margin_default"
+                            android:hint="@string/child_name"
+                            android:inputType="textCapSentences"
+                            android:maxLines="1"
+                            android:nextFocusDown="@+id/child_surname"
+                            android:singleLine="true"
+                            android:textColorHint="@color/color_hint" />
+
+                        <EditText
+                            android:id="@+id/child_surname"
+                            style="@style/EditTextGeneralDivided"
+                            android:layout_width="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/view_margin_default"
+                            android:hint="@string/child_surname"
+                            android:inputType="textCapSentences"
+                            android:maxLines="1"
+                            android:nextFocusDown="@+id/male_radio_button"
+                            android:singleLine="true"
+                            android:textColorHint="@color/color_hint" />
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="left"
+                            android:layout_marginBottom="@dimen/view_margin_default"
+                            android:layout_marginTop="@dimen/view_margin_default"
+                            android:checkedButton="@+id/male_radio_button"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/male_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/radio_button_margin"
+                                android:button="@null"
+                                android:nextFocusDown="@+id/date_of_birth"
+                                android:text="@string/text_male"
+                                android:textColor="@drawable/radio_button"
+                                android:textSize="@dimen/text_size_general" />
+
+                            <RadioButton
+                                android:id="@+id/female_radio_button"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="@dimen/radio_button_margin"
+                                android:layout_marginStart="@dimen/radio_button_margin"
+                                android:button="@null"
+                                android:nextFocusDown="@+id/date_of_birth"
+                                android:text="@string/text_female"
+                                android:textColor="@drawable/radio_button"
+                                android:textSize="@dimen/text_size_general" />
+                        </RadioGroup>
+
+                        <TextView
+                            android:id="@+id/date_of_birth"
+                            style="@style/EditTextGeneralDivided"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edit_text_general_height"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/view_margin_default"
+                            android:hint="@string/child_date_of_birth"
+                            android:nextFocusDown="@+id/state"
+                            android:singleLine="true"
+                            android:textColorHint="@color/color_hint" />
+
+                        <TextView
+                            android:id="@+id/state"
+                            style="@style/EditTextGeneralDivided"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edit_text_general_height"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/view_margin_default"
+                            android:hint="@string/child_state_hint"
+                            android:nextFocusDown="@+id/child_address"
+                            android:textColorHint="@color/color_hint" />
+
+                        <EditText
+                            android:id="@+id/child_address"
+                            style="@style/EditTextGeneralDivided"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edit_text_general_height"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/view_margin_default"
+                            android:hint="@string/child_address"
+                            android:inputType="textCapSentences"
+                            android:singleLine="true"
+                            android:textColorHint="@color/color_hint" />
+
+                        <TextView
+                            android:id="@+id/hand"
+                            style="@style/EditTextGeneralDivided"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/edit_text_general_height"
+                            android:layout_gravity="center"
+                            android:layout_marginBottom="@dimen/view_margin_default"
+                            android:hint="@string/child_hand_hint"
+                            android:text="@string/child_hand_right"
+                            android:textColorHint="@color/color_hint" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</layout>

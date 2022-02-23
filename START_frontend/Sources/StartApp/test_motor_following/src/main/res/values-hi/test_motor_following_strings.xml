@@ -1,0 +1,21 @@
+<resources>
+
+    <!-- General -->
+    <string name="test_motor_following_name">तितली पकड़ने की गेम</string>
+    <string name="test_motor_following_actionbar_text_default">तितली पकड़ने की गेम दिखाएँ </string>
+    <string name="test_motor_following_fingers_error">कृपया गेम खेलने के लिए सिर्फ एक ऊँगली का इस्तेमाल करें </string>
+    <string name="test_motor_following_instruction">अपनी ऊँगली तितली के ऊपर रखें व उसका पीछा करें | अंत में उसपर ऊँगली से दबाएं ताकि अगली बारी शुरू हो सके| जब बच्चा तैयार हो तो दायीं ओर बने बटन को दबा का खेल शुरू करें |</string>
+
+    <!-- Test result -->
+    <string name="test_motor_following_action_bar_test">मोटर निम्नलिखित परीक्षण</string>
+    <string name="test_motor_following_action_bar_test_result_1">तितली पकड़ने की गेम: पहली कोशिश</string>
+    <string name="test_motor_following_action_bar_test_result_2">तितली पकड़ने की गेम: दूसरी कोशिश </string>
+    <string name="test_motor_following_action_bar_test_result_3">तितली पकड़ने की गेम: तीसरी कोशिश</string>
+
+    <!-- Dialogs -->
+    <string name="test_motor_following_dialog_success_title">यह गेम पूरी हो गयी है</string>
+    <string name="test_motor_following_dialog_success_message">क्या आप वापिस जाना चाहते हैं ? एक नयी कोशिश करें या नयी गेम शुरू करें</string>
+    <string name="test_motor_following_dialog_interrupted_title">गेम को बीच में रोका गया था </string>
+    <string name="test_motor_following_dialog_interrupted_message">क्या आप वापिस जाना चाहते हैं ? एक नयी कोशिश करें या नयी गेम शुरू करें</string>
+
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<resources>
+    <string name="sdk_test_instruction">कृपया टैबलेट को अपने चेहरे से 30-50 सेंटीमीटर की दूरी पर रखें। अपनी नज़र को स्क्रीन के बीच में रखें और अपने सिर को आराम की स्थिति में रख़ें | स्क्रीन से अपने सिर की दूरी चेक करने के लिए नीचे लिखे संकेतों को पढ़ें|</string>
+    <string name="sdk_test_device_position">टैबलेट की स्थितिि:</string>
+    <string name="sdk_test_ok">सफल</string>
+    <string name="sdk_test_fail">असफल</string>
+    <string name="sdk_test_device_shake">टैबलेट हिल रहा है</string>
+    <string name="sdk_test_light_of_environment">आस-पास की रोशनी</string>
+    <string name="sdk_test_light_of_camera">कैमरा की रोशनी</string>
+    <string name="sdk_test_head_detect">सिर नज़र आना:</string>
+    <string name="sdk_test_head_distance">सिर की दूरी:</string>
+    <string name="sdk_test_eye_detect">आँखें नज़र आना:</string>
+    <string name="sdk_test_button_start_test">टेस्ट शुरू करें</string>
+    <string name="sdk_test_calibration">कृपया अपनी नज़र स्क्रीन के बीच में रखें</string>
+    <string name="sdk_test_button_stop_test">टेस्ट बंद करें</string>
+    <string name="sdk_test_fail_message_device_position">टैबलेट की स्थिति गलत है! कृपया इसे समतल और स्थिर जगह पर रखें</string>
+    <string name="sdk_test_fail_message_device_shake">टैबलेट स्थिर नहीं है कृपया इसे समतल और स्थिर सतह पर रखें  व टेस्ट के दौरान  ना तो इसे उठाएं ना ही इसकी जगह बदलें </string>
+    <string name="sdk_test_fail_message_light">आपके आस-पास की रौशनी कम है| कृपया अपनी जगह बदलें या फिर आस-पास की रौशनी में सुधार लाएं| </string>
+    <string name="sdk_test_fail_message_light_camera">कैमरे पर बहुत अधिक रोशनी पड़ रही है कृपया अपनी जगह बदलें या फिर आस-पास की रोशनी ठीक करें |</string>
+    <string name="sdk_test_fail_message_head_detect"> सिर का पता नहीं लग पा रहा है | कृपया टैबलेट के नज़दीक आएं या फिर आस-पास की रौशनी को ठीक करें</string>
+    <string name="sdk_test_fail_message_head_far">आपका चेहरा टैबलेट से बहुत दूर है कृपया अपने चेहरे को टैबलेट से 30-50 सेंटीमीटर की दूरी पर रखें</string>
+    <string name="sdk_test_fail_message_head_close">आपका चेहरा टैबलेट के बहुत नज़दीक है कृपया अपने चेहरे को टैबलेट से 30-50  सेंटीमीटर की दूरी पर रखें |</string>
+    <string name="sdk_test_fail_message_eye_detect">आँखों की पहचान नहीं हो पा रही | कृपया टैबलेट के नज़दीक बैठें या फिर आस-पास की रौशनी में ठीक करें</string>
+    <string name="sdk_test_calibration_not_success">कैलिब्रेशन सफल नहीं हो सका | कृपया अपने सिर को हिलाएं नहीं और दुबारा कोशिश करें </string>
+</resources>

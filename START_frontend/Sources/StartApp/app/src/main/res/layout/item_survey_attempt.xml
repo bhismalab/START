@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/survey_test_block_height"
+    android:layout_marginBottom="@dimen/card_survey_test_margin_bottom"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/survey_test_block_header_height"
+        android:layout_marginEnd="@dimen/survey_test_block_margin"
+        android:layout_marginStart="@dimen/survey_test_block_margin"
+        android:layout_marginTop="@dimen/survey_test_block_margin"
+        android:background="@drawable/divider">
+
+        <TextView
+            android:id="@+id/title_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/color_text_dark"
+            android:textSize="@dimen/survey_test_block_header_text_size" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/survey_fragment_adapter_item_padding">
+
+        <include
+            android:id="@+id/attempt_1"
+            layout="@layout/item_survey_test"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/view_1"
+            android:layout_width="@dimen/survey_fragment_adapter_item_padding"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/attempt_2"
+            layout="@layout/item_survey_test"
+            android:visibility="visible" />
+
+        <View
+            android:id="@+id/view_2"
+            android:layout_width="@dimen/survey_fragment_adapter_item_padding"
+            android:layout_height="match_parent"
+            android:visibility="visible" />
+
+        <include
+            android:id="@+id/attempt_3"
+            layout="@layout/item_survey_test"
+            android:visibility="gone" />
+
+        <View
+            android:id="@+id/view_3"
+            android:layout_width="@dimen/survey_fragment_adapter_item_padding"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/add_attempt"
+            layout="@layout/item_survey_test_add"
+            android:visibility="visible" />
+
+    </LinearLayout>
+</LinearLayout>

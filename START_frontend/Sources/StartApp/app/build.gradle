@@ -1,0 +1,203 @@
+apply plugin: 'com.android.application'
+apply plugin: 'realm-android'
+apply plugin: 'io.fabric'
+
+buildscript {
+    repositories {
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+        maven { url 'https://maven.fabric.io/public' }
+        jcenter()
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
+}
+
+android {
+    compileSdkVersion 26
+    buildToolsVersion '26.0.2'
+
+    defaultConfig {
+        applicationId "com.reading.start"
+        minSdkVersion 21
+        targetSdkVersion 26
+        versionCode 114
+        versionName "0.2.39"
+        setProperty("archivesBaseName", "start-app")
+        multiDexEnabled = true
+
+        ndk {
+            abiFilters "armeabi-v7a", "x86"
+        }
+    }
+
+    signingConfigs {
+        debug {
+            storeFile file('therapybox.keystore')
+            storePassword 'XD4ynn4XJ4Hs3GXx'
+            keyAlias 'therapybox'
+            keyPassword 'Jytw5JAd1Rtqt3xX'
+        }
+        release {
+            storeFile file('therapybox.keystore')
+            storePassword 'XD4ynn4XJ4Hs3GXx'
+            keyAlias 'therapybox'
+            keyPassword 'Jytw5JAd1Rtqt3xX'
+        }
+    }
+
+    buildTypes {
+        debug {
+            signingConfig signingConfigs.debug
+            minifyEnabled false
+            zipAlignEnabled false
+        }
+
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled false
+            zipAlignEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "default"
+
+    productFlavors {
+        internal {
+            buildConfigField "String", "PRE_DEFINDED_USER_NAME", '\"socialnadir\"'
+            buildConfigField "String", "PRE_DEFINDED_USER_PASSWORD", '\"123456\"'
+            buildConfigField "Boolean", "MAKE_TEST_DATA_DUMP", 'true'
+            buildConfigField "String", "ADMIN_NAME", '\"admin\"'
+            buildConfigField "String", "ADMIN_PASSWORD", '\"123456\"'
+            buildConfigField "Boolean", "FAKE_UPLOAD", 'false'
+            dimension "default"
+        }
+        prod {
+            buildConfigField "String", "PRE_DEFINDED_USER_NAME", '\"\"'
+            buildConfigField "String", "PRE_DEFINDED_USER_PASSWORD", '\"\"'
+            buildConfigField "Boolean", "MAKE_TEST_DATA_DUMP", 'false'
+            buildConfigField "String", "ADMIN_NAME", '\"admin\"'
+            buildConfigField "String", "ADMIN_PASSWORD", '\"123456\"'
+            buildConfigField "Boolean", "FAKE_UPLOAD", 'false'
+            dimension "default"
+        }
+    }
+
+    dataBinding {
+        enabled true
+    }
+
+    dexOptions {
+        javaMaxHeapSize "6g"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    packagingOptions {
+        exclude 'META-INF/rxjava.properties'
+    }
+
+    applicationVariants.all { variant ->
+        variant.outputs.all {
+            def appName = "start-app"
+            def buildType = variant.variantData.variantConfiguration.buildType.name
+            def flavorType = variant.flavorName
+
+            def newName = "${appName}-${flavorType}-${buildType}-${variant.versionName}-${variant.versionCode}.apk"
+            outputFileName = newName
+        }
+    }
+}
+
+dependencies {
+    // Include libs folder
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    // Android libs
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support:support-v4:26.1.0'
+    implementation 'com.android.support:design:26.1.0'
+    implementation 'com.android.support:percent:26.1.0'
+    implementation 'com.android.support:cardview-v7:26.1.0'
+    implementation 'com.android.support:multidex:1.0.2'
+
+    // Material Dialogs
+    implementation 'com.afollestad.material-dialogs:core:0.8.6.1'
+
+    // RxJava
+    implementation 'io.reactivex.rxjava2:rxjava:2.1.6'
+    implementation 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    implementation 'com.jakewharton.rxbinding2:rxbinding:2.0.0'
+
+    // Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.3.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava:2.3.0'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.8.1'
+
+    // Picasso
+    implementation 'com.squareup.picasso:picasso:2.5.3-SNAPSHOT'
+
+    // Crashlytics
+    implementation('com.crashlytics.sdk.android:crashlytics:2.7.1@aar') {
+        transitive = true
+    }
+
+    // Signature
+    implementation 'com.github.gcacace:signature-pad:1.2.1'
+
+    // Expandable Layout
+    implementation 'com.github.aakira:expandable-layout:1.6.0@aar'
+
+    // Custom views
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+
+    // Test Modules
+    implementation project(':tests')
+
+    // OpenCV lib
+    implementation project(':openCVLibrary320')
+
+    // Eye Tracking Sdk lib
+    implementation project(':sdk_eye_tracking')
+
+    // test_eye_tracking
+    implementation project(':test_eye_tracking')
+
+    // test_wheel
+    implementation project(':test_wheel')
+
+    // test_coloring
+    implementation project(':test_coloring')
+
+    // test_choice_touching
+    implementation project(':test_choice_touching')
+
+    // test_jabble
+    implementation project(':test_jabble')
+
+    // test_motor_following
+    implementation project(':test_motor_following')
+
+    // test_parent
+    implementation project(':test_parent')
+
+    // test_parent_child_play
+    implementation project(':test_parent_child_play')
+}

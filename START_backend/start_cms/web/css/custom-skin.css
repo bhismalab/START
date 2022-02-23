@@ -1,0 +1,276 @@
+@font-face {
+    font-family: "Emoji";
+    src: url('../fonts/EmojiSymbols-Regular.woff') format('woff');
+}
+
+html body {
+	font-family: "Helvetica Neue", Helvetica, Arial, Emoji, sans-serif; font-weight: unset;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+	font-family: "Helvetica Neue", Helvetica, Arial, Emoji, sans-serif;
+}
+
+.fa {
+	font-size: 16px;
+}
+
+.small-box .icon .fa {
+	font-size: 90px;
+}
+
+.btn-toggle-disabled {
+	color: #888;
+}
+
+.btn-toggle-on {
+	color: #449d44;
+}
+
+.btn-toggle-on:hover {
+	color: #008d4c;
+}
+
+.btn-toggle-off {
+	color: #c00;
+}
+
+.btn-toggle-off:hover {
+	color: #a00;
+}
+
+.modal-footer {
+	border-top-color: #e5e5e5;
+}
+
+.modal-content {
+	border-radius: 3px;
+}
+
+/*.social-auth-links .btn-google {*/
+.social-auth-links .btn-social {
+	padding-left: 59px;
+}
+
+/*.social-auth-links .btn-google i.fa-google-plus {*/
+.social-auth-links .btn-social i {
+	width: 47px;
+}
+
+.login-page {
+	background: url('../images/sign-in-bg.jpg') 100% 100% no-repeat; background-size: cover;
+}
+
+.login-box {
+	margin: 2% auto;
+}
+
+.login-box-body {
+	border-radius: 3px; background: url('../images/opacity-0-8.png');
+}
+
+.login-logo {
+	color: #fff; opacity: 0.6;
+}
+
+.password_recovery {
+    background: #d2d6de;
+}
+
+.password_recovery-wrapper {
+	max-width: 400px; margin: 0 auto; margin-top: 10%;
+}
+
+.password_recovery-logo {
+	font-size: 35px; text-align: center; margin-bottom: 25px; font-weight: 300;
+}
+
+.password_recovery .password_recovery-title {
+	text-align: center; font-weight: bold;
+}
+
+.password_recovery-item {
+    border-radius: 4px; padding: 0; background: #fff; position: relative; margin: 10px auto 30px auto; width: 290px;
+}
+
+.password_recovery-image {
+	border-radius: 50%; position: absolute; left: -10px; top: -25px; background: #fff; padding: 5px; z-index: 10;
+}
+
+.password_recovery-image > img {
+	border-radius: 50%; width: 70px; height: 70px;
+}
+
+.password_recovery-credentials {
+	margin-left: 70px;
+}
+
+.password_recovery-credentials .form-control {
+	border: 0;
+}
+
+.password_recovery-credentials .btn {
+    background-color: #fff; border: 0; padding: 0 10px;
+}
+
+.password_change {
+    background: #d2d6de;
+}
+
+.password_change-wrapper {
+	max-width: 400px; margin: 0 auto; margin-top: 10%;
+}
+
+.password_change-logo {
+	font-size: 35px; text-align: center; margin-bottom: 25px; font-weight: 300;
+}
+
+.password_change .password_change-title {
+	text-align: center; font-weight: bold;
+}
+
+.password_change-item {
+    border-radius: 4px; padding: 0; background: #fff; position: relative; margin: 10px auto 30px auto; width: 290px;
+}
+
+.password_change-image {
+	border-radius: 50%; position: absolute; left: -10px; top: -25px; background: #fff; padding: 5px; z-index: 10;
+}
+
+.password_change-image > img {
+	border-radius: 50%; width: 70px; height: 70px;
+}
+
+.password_change-credentials {
+	margin-left: 70px;
+}
+
+.password_change-credentials .form-control {
+	border: 0;
+}
+
+.password_change-credentials .btn {
+    background-color: #fff; border: 0; padding: 0 10px;
+}
+
+.lockscreen .lockscreen-title {
+	text-align: center; font-weight: bold;
+}
+
+.error-page h2, .error-page h3 {
+	margin-top: 0; margin-bottom: 0;
+}
+
+.error-page > .error-content {
+	padding-top: 26px;
+}
+
+.error-403-page .error-page .error-content {
+    padding-top: 16px;
+}
+
+.error-content p {
+	margin: 10px 0 10px;
+}
+
+.user-menu .dropdown-menu {
+	box-shadow: 0 7px 10px rgba(0,0,0,0.3);
+}
+
+.list-ico {
+	height: 16px; vertical-align: middle; margin-right: 3px;
+}
+
+.box-header .box-tools {
+	padding: 0;
+}
+
+.table-striped > tbody > tr:nth-of-type(2n+1) {
+	background-color: #f0f0f0;
+}
+
+.table-bordered {
+    border: 1px solid #e8e8e8;
+}
+
+.table-bordered > thead > tr > th, .table-bordered > tbody > tr > th, .table-bordered > tfoot > tr > th, .table-bordered > thead > tr > td, .table-bordered > tbody > tr > td, .table-bordered > tfoot > tr > td {
+    border: 1px solid #e8e8e8;
+}
+
+#filter-wrapper {
+	position: absolute; top: 36px; right: 0px; background: #ccc; width: 380px; height: 380px; display: none; z-index: 9999; padding: 20px;
+}
+
+#filter-wrapper .filter-block {display: inline-block; margin: 0 20px 20px 0;}
+
+.popupTitle {
+	margin: 0 0 10px 0; text-align: center;
+}
+
+.popupDescription {
+	text-align: justify;
+}
+
+.popupFormInputsBlock {
+	display: block; margin-bottom: 5px;
+}
+
+.popupFormInputsBlock .form-control {
+	width: 100%;
+}
+
+.form-div-multicheckbox {
+	width: 419px; height: 128px; max-height: 128px; background: #fff; border: 1px solid #d5d5d5; margin-bottom: 5px; padding: 5px 10px; overflow: auto;
+}
+
+.form-div-multicheckbox label {
+	display: inline; margin-left: 10px; font-weight: normal;
+}
+
+.popupControls {
+	margin-top: 15px; text-align: center;
+}
+
+.contextual-navigation {
+	position: relative; padding: 15px 15px 0 15px;
+}
+
+.pagination {
+	margin: 0; white-space: nowrap; text-align: right; display: inline-block; padding-left: 0; margin: 15px 1px 5px; border-radius: 4px;
+}
+
+.pagination > a, .pagination > span {
+    position: relative; float: left; padding: 6px 12px; margin-left: -1px; line-height: 1.42857143; color: #337ab7; text-decoration: none; background-color: #fff; border: 1px solid #ddd;
+}
+
+.pagination > a:hover {
+    z-index: 2; color: #23527c; background-color: #eee; border-color: #ddd;
+}
+
+.pagination .current {
+    z-index: 3; color: #fff; cursor: default; background-color: #337ab7; border-color: #337ab7;
+}
+
+.pagination a:first-child {
+	border-radius: 5px 0 0 5px;
+}
+
+.pagination a:last-child {
+	border-radius: 0 5px 5px 0;
+}
+
+.customizedFileInputBox input {
+	position: absolute; left: -9999px; top: 0px;
+}
+
+.customizedFileInputBox label.customizedFileInputOverlay {
+	margin: 0; font-weight: normal;
+}
+
+.userpic {
+	width: 40px; height: 40px; border: 2px solid #aaa; border-radius: 22px; vertical-align: middle; margin-right: 10px;
+}
+
+.userpic-big .profile-user-img {
+	width: auto;
+}
