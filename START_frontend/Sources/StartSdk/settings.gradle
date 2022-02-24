@@ -1,2 +1,0 @@
-include ':sdk'
-include ':openCVLibrary320'
