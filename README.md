@@ -2,7 +2,7 @@
 
 Copyright **2021 University of Reading**
 
-DOI: **10.5281/zenodo.6326439**
+**DOI**: 10.5281/zenodo.6326439
 
 This product includes software developed by the START project team at
 University of Reading (www.reading.ac.uk), in collaboration with
