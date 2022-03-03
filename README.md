@@ -1,6 +1,7 @@
 # Screening Tools for Autism Risk using Technology (START)
 
 Copyright **2021 University of Reading**
+
 DOI: 10.5281/zenodo.6326439
 
 This product includes software developed by the START project team at
